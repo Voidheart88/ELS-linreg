@@ -1,0 +1,307 @@
+% Author: Dominik Stolte
+% Beamer presentation for renewable energys 2
+% 3.1.2020
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[font=scriptsize]{caption}
+\usepackage{bookmark}
+\usepackage{verbatim}
+\usepackage{textpos}
+
+\title{MERLIN -- Methane Remote Lidar Mission}
+\author{Dominik Stolte}
+\institute[{Hochschule Mannheim}]{Hochschule Mannheim}
+\logo{\includegraphics[height=0.8cm]{Bilder/hsma-logo.pdf}\vspace{235pt}}
+\date{\today}
+
+\begin{document} 
+\setbeamertemplate{itemize items}[circle]
+
+\begin{frame}
+  \titlepage{}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Warum das Ganze?}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=4cm]{Bilder/laser-meme.jpg}
+    \includegraphics[width=3.5cm]{Bilder/Castle_Bravo.jpg}
+    \caption{Warum das ganze?\\ 
+    Quellen: Memereaktor/US Gov}\label{fig:WHY}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Inhalt}
+  \tableofcontents
+\end{frame}
+
+\section{Einführung}
+\begin{frame}
+  \frametitle{MERLIN}    
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=4cm]{Bilder/Forschung_MERLIN_fig1.png}
+    \caption{MERLIN - künst. Darstellung\\ 
+    Quelle: DLR - Institut f. Atmosphärenphysik}\label{fig:MERLIN}
+  \end{figure}
+\end{frame}
+
+\subsection{Methan}
+\begin{frame}
+  \frametitle{Methan}
+  \begin{itemize}
+    \item Was ist Methan
+    \item Methandetektion
+    \item IPDA
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Methan}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=4cm]{Bilder/meth-formula.pdf}
+    \caption{Methan - Struktur\\ 
+    Quellen: Wikipedia}\label{fig:METH}
+  \end{figure}
+  \begin{itemize}
+    \item Klimagas
+    \item Entsteht bei Anäroben Stoffwechselprozessen - Fäulnis
+    \item Entsteht auch durch vulkanische Aktivität
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Methan II - Konzentration}
+  \begin{itemize}
+    \item $\mathrm{CO_2}$-Anteil: 280 ppm vorindustriell - 400 ppm jetzt (+42\%)
+    \item $\mathrm{CH_4}$-Anteil: 0,73 ppm vorindustriell - 1,8 ppm jetzt (+148\%)
+    \item Klimaschädlichkeit 25x höher als bei $\mathrm{CO_2}$ (IPCC)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Methan III - Vorkommen}
+  \begin{itemize}
+    \item Gebunden als Methanhydrat
+    \item Hauptbestandteil von Erdgas
+    \item Bestandteil von Grubengas in Kohlegruben
+  \end{itemize}
+\end{frame}
+
+\subsection{Methandetektion}
+\begin{frame}
+  \frametitle{Wie findet man Methan?}
+  \begin{itemize}
+    \item Passiv - Sonne strahlt in Atmosphäre und man guckt hin
+    \begin{itemize}
+      \item günstig
+      \item benötigt wenig Energie
+      \item geringe Auflösung
+      \item geht nur bei Tag
+    \end{itemize}
+    \item Aktiv - LASER :D
+    \begin{itemize}
+      \item teuer
+      \item benötigt viel Energie
+      \item hohe Auflösung
+      \item geht immer
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Integrated path differential absorption}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=4cm]{Bilder/Forschung_MERLIN_fig2.png}
+    \caption{aktive Messung\\ 
+    Quelle: DLR}\label{fig:IPDA}
+  \end{figure}
+
+  \begin{itemize}
+    \item $\lambda_{\mathrm{on}}$ - 1645.552\,nm
+    \item $\lambda_{\mathrm{off}}$ - 1645.846\,nm
+  \end{itemize}  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merlin - Vorgänger}
+  \begin{itemize}
+    \item High Altitude and Long Range Research Aircraft - HALO
+    \item Environmental Satellite - ENVISAT
+    \item Greenhouse Gases Observing Satellite - GOSAT
+  \end{itemize}
+\end{frame}
+
+\section{Technik}
+\begin{frame}
+  \frametitle{Technik}
+  \begin{itemize}
+    \item Orbit
+    \item Laser
+    \item Energiegewinnung 
+    \item Housekeeping
+  \end{itemize}
+\end{frame}
+
+\subsection{Orbit}
+\begin{frame}
+  \frametitle{Merlin - Orbit}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=6cm]{Bilder/merlin_orbit.pdf}
+    \caption{Orbit Merlin\\ 
+    Quelle: eigenes Bild}\label{fig:MERLORBIT}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merlin - Orbit II}
+  \begin{itemize}
+    \item $T_{\mathrm{UM}} = \frac{r_{\mathrm{Erde}}+h_{\mathrm{Orbit}}}{V_{\mathrm{Umlauf}}}\cdot \frac{2\pi}{60\frac{\mathrm{s}}{\mathrm{min}}} \approx 102,79\,min$
+    \item Blickrichtung Sonne - Es wird nie Nacht für den Satelliten!
+    \item Alle 28 Tage ist die Erde einmal kartiert
+    \item Sichtbarkeit 15\,min pro Tag
+    \item 500\,km über NN
+    \item Local Time of Ascending Node (LTAN) 6:00
+  \end{itemize}
+\end{frame}
+
+\subsection{Laser}
+
+\begin{frame}
+  \frametitle{Merlin - Laser I}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=6cm]{Bilder/Laser2.jpg}
+    \caption{So machts Merlin\\ 
+    Quelle: Fraunhofer ILT, Aachen}\label{fig:MERLASER}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merlin - Laser II}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=6cm]{Bilder/MERLIN_tech.pdf}
+    \caption{So machts Merlin\\ 
+    Quelle: eigenes Bild}\label{fig:MERLASER}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merlin - Laser }
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=6cm]{Bilder/OPO.jpg}
+    \caption{Optisch parametrischer Oszillator\\ 
+    Quelle: Fraunhofer ILT, Aachen}\label{fig:MERLASER}
+  \end{figure}
+\end{frame}
+
+
+\subsection{Energie}
+\begin{frame}
+  \frametitle{Merlin - Energie}
+  \begin{itemize}
+    \item Satellit gesamt - 400\,W
+    \item davon Nutzlast - 150\,W
+    \item Rest: Margin und Kommunikation, Housekeeping, Lagereglung
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merlin - Energie II} 
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=4cm]{Bilder/Forschung_MERLIN_fig1.png}
+    \caption{MERLIN - künst. Darstellung\\ 
+    Quelle: DLR - Institut f. Atmosphärenphysik}
+  \end{figure}
+\end{frame}
+
+\subsection{Bus und Kommunikation}
+\begin{frame}
+  \frametitle{Merlin - Träger} 
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=7cm]{Bilder/merlin_satbus.jpeg}
+    \caption{MERLIN - Satellitenbus\\ 
+    Quelle: CNES}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merlin - Lagereglung} 
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=4cm]{Bilder/reaktionsrad.pdf}
+    \caption{Funktion Reaktionsrad\\ 
+    Quelle: eigenes Bild}
+  \end{figure}
+  \[J = \int_V \vec{r}^2 p(\vec{r})\mathrm{d}V\]
+  \[L = J \cdot \omega\]
+  \[M = J \cdot \dot{\omega}\]
+  \[M = k_{\mathrm{M}}\cdot I\]
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merlin - Lagereglung II }
+  \begin{itemize}
+    \item Oft magnetgelagert - keine Reibung
+    \item Reaktionsrad sättigt durch Benutzung
+    \item Entsättigung durch Zünden von Steuerdüsen
+    \item Entsättigung durch magnetisches "Festklammern" 
+  \end{itemize}
+\end{frame}
+
+\section{Zusammenfassung}
+\begin{frame}
+  \frametitle{Gelerntes}
+  \begin{itemize}
+    \item Was ist Methan ?
+    \item Wo kommt Methan her ?
+    \item Wie finded man Methan ?
+    \item Was ist IPDA ?
+    \item Warum nutzt man einen solarsynchronen Orbit ?
+    \item Wie funktioniert die Energieversorgung ?
+    \item Wie ist der Satellit grob aufgebaut ?
+    \item Wie funktioniert Lagereglung bei einem Satelliten ?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ende}
+  \begin{center}
+    \large{Fragen?}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ende II}
+  \begin{center}
+    \large{Fragen?}
+  \end{center} 
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=8cm]{Bilder/star-wars_2785213.jpg}
+    \caption{Der Todesstern\\ 
+    Quelle:\\ https://www.gamestar.de/artikel/star-wars-neue-details-zum-todesstern-stellen-alles-auf-den-kopf,3308561.html}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Quellen}
+  \begin{itemize}
+    \item Wiki: \url{https://de.wikipedia.org/wiki/Merlin_(Satellit)}
+    \item DLR: \url{https://www.dlr.de/rd/desktopdefault.aspx/tabid-2440/3586_read-31672/}
+    \item Earth Observation: \url{https://directory.eoportal.org/web/eoportal/satellite-missions/m/merlin}
+    \item Fraunhofer Institut: \url{https://www.ilt.fraunhofer.de/de/presse/pressemitteilungen/pm2017/pressemitteilung-28-04-2017.html}
+  \end{itemize}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,37 @@
+.MODEL pnpt PNP()
+.MODEL npnt NPN()
+.MODEL mosn NMOS()
+.MODEL mosp PMOS(L=30n W=2u)
+
+.SUBCKT Diode A K
+  .model diode D()
+  D1 A K diode
+.ENDS Diode
+
+.model Z_2_5 d BV=2.55
+.model Z_5 d BV=5.05
+.model Z_x d BV=4.7
+
+.SUBCKT Comparator IH IL OH OL
+  ECMP OH OL TABLE {V(IH,IL)} = (-5mV, 0V) (5mV, 5V)
+.ENDS Comparator
+
+.SUBCKT switch 1 2 3 4
+  .model switch sw vt=0.1 vh=0.05 ron=100m roff=1e12
+  S1 3 4 1 2 switch OFF
+.ENDS switch
+
+.SUBCKT lltl 1 2 3 4 PARAMS: Z = 1 T=10u
+  T1 1 2 3 4 Z0={Z} TD={T}
+.ENDS lltl
+
+.SUBCKT sgap 1 2
+  .func R(U) U < 3000? 5:10Meg 
+  R1 1 2 R(V(1))
+.ENDS sgap
+
+.SUBCKT Voltmeter 1 2 3
+  B1 3 0 V=V(1 2)
+  R1 1 2 1e32
+  R2 3 0 1e32
+.ENDS Voltmeter

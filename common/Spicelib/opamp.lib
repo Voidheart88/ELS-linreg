@@ -1,0 +1,45 @@
+* Universal Opamp SPICE Macromodel
+* Version: v0.1
+* Date: 2019-11-23
+* 
+* Author: Dominik Stolte
+* 
+* 
+
+
+*****************************************
+* Universal Opamp
+* Single pole opamp
+* 
+* PINOUT ORDER  1   2   3
+* PINOUT ORDER +IN -IN OUT
+* 
+
+.subckt opamp +IN -IN V+ V- OUT
+
+* Input
+R1 +IN VR {Rin}
+C1 +IN VR {Cin}
+
+R2 -IN VR {Rin}
+C2 -IN VR {Cin}
+
+V1 +IN 001 {Vos}
+
+
+* Pole
+
+GP1 P1_1 0 001 -IN 1
+RP1 P1_1 0 1k
+CP1 P1_1 0 1/(6,28k*{Fu}*(128/(90-PM)-0,422))
+EP  P1_O 0 P1_1 0 1
+
+
+* Input
+
+.param Rin=4Meg
+.param Cin=1p
+.param Vos=0.5m
+
+.ends
+*****************************************

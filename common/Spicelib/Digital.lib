@@ -1,0 +1,48 @@
+* Common Parameters: 
+* VH: Input logic HIGH threshold
+* VL: Input logic LOW threshold
+* VCC: Output logic HIGH value
+
+*OR Gate 2Input
+.subckt OR2 INA1 INA2 OUTA PARAMS: VH=3.5, VL=1.5, VCC=5
+    .model d_lut_or2 d_lut (rise_delay=5n fall_delay=5n input_load=1.0p table_values "0111")
+    .model todig adc_bridge(in_high=VH in_low=VL )
+    .model toan dac_bridge(out_high=VCC out_low=0.0)
+
+    AA2D [INA1 INA2] [D1 D2] todig
+    AOR [D1 D2] OUT d_lut_or2
+    AD2A [OUT] [OUTA] toan
+.ends
+
+*AND Gate 2Input
+.subckt AND2 INA1 INA2 OUTA PARAMS: VH=3.5, VL=1.5, VCC=5
+    .model d_lut_and2 d_lut (rise_delay=5n fall_delay=5n input_load=1.0p table_values "0001")
+    .model todig adc_bridge(in_high=VH in_low=VL )
+    .model toan dac_bridge(out_high=VCC out_low=0.0)
+
+    AA2D [INA1 INA2] [D1 D2] todig
+    AAND [D1 D2] OUT d_lut_and2
+    AD2A [OUT] [OUTA] toan
+.ends
+
+*NOT Gate 1Input
+.subckt NOT INA1 OUTA PARAMS: VH=3.5, VL=1.5, VCC=5
+    .model d_lut_not d_lut (table_values "10")
+    .model todig adc_bridge(in_high=VH in_low=VL )
+    .model toan dac_bridge(out_high=VCC out_low=0.0)
+
+    AA2D [INA1] [D1] todig
+    ANOT [D1] OUT d_lut_not
+    AD2A [OUT] [OUTA] toan
+.ends
+
+
+.subckt SRFF S R Q NQ SET RES CLK
+    .model adb adc_bridge()
+    .model ff d_srff()
+    .model dab dac_bridge(out_high = 5)
+
+    ADB1 [S R SET RES CLK] [DS DR DSET DRES DCLK] adb
+    AFF DS DR DCLK DSET DRES DQ DNQ ff
+    AAB1 [DQ DNQ] [Q NQ] dab
+.ends

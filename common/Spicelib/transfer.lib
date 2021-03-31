@@ -1,0 +1,61 @@
+* Gain
+.SUBCKT Gain I O PARAMS: G=2
+  ag I O amp
+  .model amp gain(gain={G})
+.ENDS Gain
+
+* Integrator
+.SUBCKT Integ I O PARAMS: G=1 ulim=1e9 llim=-1e9 limr=1e9
+  ai I O Integrator
+  .model Integrator int gain={G} limit_range={limr} out_lower_limit={llim} out_upper_limit={ulim}
+.ENDS Integ
+
+* Differentiator
+.SUBCKT Diff I O PARAMS: G=1 ulim=1e9 llim=0 limr=1e-9
+  ad I O Diff
+  .model Diff d_dt gain={G} limit_range={limr} out_lower_limit={llim} out_upper_limit={ulim}
+.ENDS Diff
+
+* Summer1
+.SUBCKT Sum1 I1 I2 O
+  as [I1 I2] O Sum
+  .model Sum summer(in_gain=[1 1] out_gain=1)
+.ENDS Sum1
+
+* Summer2 (subtractor)
+.SUBCKT Sum2 I1 I2 O
+  as [I1 I2] O Sum
+  .model Sum summer(in_gain=[1 -1] out_gain=1)
+.ENDS Sum2
+
+* Hysteresis -take care, makes problems
+.SUBCKT Hys I O PARAMS: in=5 olo=-5 ohi=5
+  ah I O Hys
+  .model Hys hyst(in_low=1 in_high=-1 hyst=4 out_lower_limit={olo} out_upper_limit={ohi} input_domain=0.0001 fraction=FALSE)
+.ENDS Hys
+
+* Triangle
+.SUBCKT Tri I O
+  ah I O Tri
+  .model Tri triangle(cntl_array = [1] freq_array=[20000] out_low = 0 out_high = 2 duty_cycle = 0.5)
+.ENDS Tri
+
+* Comparator
+.SUBCKT Cmp I T O PARAMS: ohi=5 olo=0
+  BC O 0 V = V(I) > V(T) ? {ohi}:{olo}
+.ENDS Cmp
+
+* Sine
+.SUBCKT Sin I O
+  BC O 0 V = sin(V(I))
+.ENDS Sin
+
+* Cosine
+.SUBCKT Cos I O
+  BC O 0 V = cos(V(I))
+.ENDS COs
+
+* Mult
+.SUBCKT Mult I1 I2 O
+  BC O 0 V = V(I1)*V(I2)
+.ENDS Mult

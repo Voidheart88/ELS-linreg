@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name D_Standart)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/D_Standart.lib)(options "")(descr ""))
+  (lib (name Digital)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/Digital.lib)(options "")(descr ""))
+  (lib (name Standard)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/Standard.lib)(options "")(descr ""))
+  (lib (name standard_power)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/standard_power.lib)(options "")(descr ""))
+  (lib (name Symbols)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/Symbols.lib)(options "")(descr ""))
+  (lib (name T_BJT)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/T_BJT.lib)(options "")(descr ""))
+  (lib (name T_Darlington)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/T_Darlington.lib)(options "")(descr ""))
+  (lib (name T_JFET)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/T_JFET.lib)(options "")(descr ""))
+  (lib (name T_MOSFET)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/T_MOSFET.lib)(options "")(descr ""))
+)

@@ -1,0 +1,199 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Standard_C
+#
+DEF Standard_C C 0 40 N N 1 F N
+F0 "C" 0 110 50 H V C CNN
+F1 "Standard_C" 0 -90 50 H V C CNN
+F2 "EIA Standart:0805" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -20 50 -20 -50 N
+P 2 0 1 0 20 50 20 -50 N
+X 1 1 -50 0 30 R 50 50 1 1 P
+X 2 2 50 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Standard_Diode_Zener
+#
+DEF Standard_Diode_Zener D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Standard_Diode_Zener" 0 550 50 H I C CNN
+F2 "Diode_THT:D_DO-201_P15.24mm_Horizontal" 0 450 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 200 50 H I C CNN "Spice_Primitive"
+F5 "Zener" 0 200 50 H V C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 0 750 50 H I C CNN "Spice_Lib_File"
+$FPLIST
+ D*DO?201*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 8 -50 -50 -50 50 -30 50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+X A 1 100 0 50 L 50 50 1 1 P
+X K 2 -100 0 50 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Standard_R
+#
+DEF Standard_R R 0 40 N N 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "Standard_R" 0 -100 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 5 0 1 0 -60 30 -60 -30 60 -30 60 30 -60 30 N
+X 1 1 -100 0 39 R 50 50 1 1 P
+X 2 2 100 0 39 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Symbols_Voltage
+#
+DEF Symbols_Voltage V 0 40 Y Y 1 F N
+F0 "V" -150 0 50 H V C CNN
+F1 "Symbols_Voltage" 200 0 50 H V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+DRAW
+C 0 0 50 0 1 0 N
+P 2 0 1 0 -80 -60 -90 -50 N
+P 2 0 1 0 0 50 0 -50 N
+P 3 0 1 0 -80 60 -80 -60 -70 -50 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# T_BJT_2N2222
+#
+DEF T_BJT_2N2222 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "T_BJT_2N2222" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "BFR92P" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Users\\Stolte\\Desktop\\git\\Private\\KiCAD_Libs\\Spice Models\\BJT\\2N2222.LIB" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# T_BJT_2N2907
+#
+DEF T_BJT_2N2907 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "T_BJT_2N2907" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Q" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "2N2907" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\T_BJT\\2N2907.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -30 -30 -30 -40 -20 -30 -30 -30 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# T_JFET_J2SK152
+#
+DEF T_JFET_J2SK152 J 0 40 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "T_JFET_J2SK152" 0 -190 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "J" 0 350 50 H I C CNN "Spice_Primitive"
+F5 "J2SK152-GEN" 0 350 50 H I C CNN "Spice_Model"
+F6 "Y" 0 350 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\T_FET\\JFET.lib" 0 350 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 -50 -50 -60 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -50 50 -50 60 N
+P 3 0 1 0 0 -70 0 -45 -50 -45 N
+P 3 0 1 0 0 70 0 45 -50 45 N
+P 4 0 1 0 -70 -40 -70 -60 -60 -50 -70 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 -50 50 R 25 25 1 1 P
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# standard_power_0
+#
+DEF standard_power_0 #PWR 0 0 N N 1 F P
+F0 "#PWR" 200 0 50 H I C CNN
+F1 "standard_power_0" 0 -100 25 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -60 30 0 0 0 0 Normal 0 C C
+P 2 0 1 15 -50 -25 50 -25 N
+P 2 0 1 0 0 0 0 -25 N
+X 0 ~ 0 0 25 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# standard_power_15V
+#
+DEF standard_power_15V #PWR 0 0 N N 1 F P
+F0 "#PWR" 100 0 50 H I C CNN
+F1 "standard_power_15V" 0 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 0 -30 -60 N
+P 2 0 1 0 0 0 0 -100 N
+P 2 0 1 0 0 0 30 -60 N
+X 15V 1 0 -100 100 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# standard_power_PWR
+#
+DEF standard_power_PWR # 0 0 N N 1 F P
+F0 "#" 100 0 50 H I C CNN
+F1 "standard_power_PWR" 0 -75 25 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 5 0 1 0 0 -25 50 -50 0 -75 -50 -50 0 -25 N
+X ~ ~ 0 0 25 D 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# standard_power_VCC
+#
+DEF standard_power_VCC #PWR 0 0 N N 1 F P
+F0 "#PWR" 100 0 50 H I C CNN
+F1 "standard_power_VCC" 0 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 0 -30 -60 N
+P 2 0 1 0 0 0 0 -100 N
+P 2 0 1 0 0 0 30 -60 N
+X VCC 1 0 -100 100 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

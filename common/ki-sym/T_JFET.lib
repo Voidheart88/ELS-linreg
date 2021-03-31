@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 2N5460
+#
+DEF 2N5460 J 0 40 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "2N5460" 0 -190 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "J" 0 350 50 H I C CNN "Spice_Primitive"
+F5 "2N5460" 0 350 50 H I C CNN "Spice_Model"
+F6 "Y" 0 350 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\T_FET\\JFET.lib" 0 350 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 -50 -50 -60 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -50 50 -50 60 N
+P 3 0 1 0 0 -70 0 -45 -50 -45 N
+P 3 0 1 0 0 70 0 45 -50 45 N
+P 4 0 1 0 -60 -60 -60 -40 -70 -50 -60 -60 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 -50 50 R 25 25 1 1 P
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# J2SK152
+#
+DEF J2SK152 J 0 40 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "J2SK152" 0 -190 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "J" 0 350 50 H I C CNN "Spice_Primitive"
+F5 "J2SK152-GEN" 0 350 50 H I C CNN "Spice_Model"
+F6 "Y" 0 350 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\T_FET\\JFET.lib" 0 350 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 -50 -50 -60 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -50 50 -50 60 N
+P 3 0 1 0 0 -70 0 -45 -50 -45 N
+P 3 0 1 0 0 70 0 45 -50 45 N
+P 4 0 1 0 -70 -40 -70 -60 -60 -50 -70 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 -50 50 R 25 25 1 1 P
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

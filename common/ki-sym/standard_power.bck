@@ -1,0 +1,137 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP -15V
+K power-flag
+$ENDCMP
+#
+$CMP -24V
+K power-flag
+$ENDCMP
+#
+$CMP -5V
+K power-flag
+$ENDCMP
+#
+$CMP 0
+D Spice 0V
+$ENDCMP
+#
+$CMP 12V
+K power-flag
+$ENDCMP
+#
+$CMP 15V
+K power-flag
+$ENDCMP
+#
+$CMP 1V2
+K power-flag
+$ENDCMP
+#
+$CMP 1V5
+K power-flag
+$ENDCMP
+#
+$CMP 1V8
+K power-flag
+$ENDCMP
+#
+$CMP 230V
+D 230V Power
+K power-flag
+$ENDCMP
+#
+$CMP 24V
+K power-flag
+$ENDCMP
+#
+$CMP 28V
+K power-flag
+$ENDCMP
+#
+$CMP 2V5
+K power-flag
+$ENDCMP
+#
+$CMP 3V3
+K power-flag
+$ENDCMP
+#
+$CMP 3V3A
+K power-flag
+$ENDCMP
+#
+$CMP 3V3D
+K power-flag
+$ENDCMP
+#
+$CMP 48V
+K power-flag
+$ENDCMP
+#
+$CMP 48V_1
+K power-flag
+$ENDCMP
+#
+$CMP 48V_2
+K power-flag
+$ENDCMP
+#
+$CMP 5V
+K power-flag
+$ENDCMP
+#
+$CMP 5VA
+K power-flag
+$ENDCMP
+#
+$CMP 5VP
+D 5V Primary Side
+K power-flag
+$ENDCMP
+#
+$CMP 6V
+K power-flag
+$ENDCMP
+#
+$CMP AGND
+D Analog ground
+$ENDCMP
+#
+$CMP DGND
+D Digital ground
+$ENDCMP
+#
+$CMP DQGND
+D Digital quiet ground
+$ENDCMP
+#
+$CMP GND
+D Ground
+$ENDCMP
+#
+$CMP PGND
+D Power ground
+$ENDCMP
+#
+$CMP PWR
+D Power flag
+$ENDCMP
+#
+$CMP SGND
+D Support ground
+$ENDCMP
+#
+$CMP STRUC
+D Structural gorund
+$ENDCMP
+#
+$CMP VCC
+K power-flag
+$ENDCMP
+#
+$CMP VSS
+K power-flag
+$ENDCMP
+#
+#End Doc Library

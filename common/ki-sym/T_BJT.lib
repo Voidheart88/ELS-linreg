@@ -1,0 +1,247 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 2N2222
+#
+DEF 2N2222 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "2N2222" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "BFR92P" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Users\\Stolte\\Desktop\\git\\Private\\KiCAD_Libs\\Spice Models\\BJT\\2N2222.LIB" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 2N2907
+#
+DEF 2N2907 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "2N2907" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Q" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "2N2907" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\T_BJT\\2N2907.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -30 -30 -30 -40 -20 -30 -30 -30 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 2N3019
+#
+DEF 2N3019 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "2N3019" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "BFR92P" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Users\\Stolte\\Desktop\\git\\Private\\KiCAD_Libs\\Spice Models\\BJT\\2N2222.LIB" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 -100 50 U 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 100 50 D 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 2N3716
+#
+DEF 2N3716 Q 0 40 Y Y 1 F N
+F0 "Q" 250 -50 50 H V C CNN
+F1 "2N3716" 250 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 100 0 1 0 N
+C 0 100 0 0 1 20 F
+P 2 0 1 0 -100 0 -50 0 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 0 -100 0 -50 N
+P 2 0 1 0 0 -50 -50 -20 N
+P 2 0 1 0 0 50 -50 20 N
+P 2 0 1 0 0 50 0 100 N
+P 4 0 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 -150 0 50 R 25 25 1 1 I
+X ~ 2 0 -150 50 U 25 25 1 1 P
+X ~ 3 0 150 50 D 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BC817-40
+#
+DEF BC817-40 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "BC817-40" 0 -350 50 H V C CNN
+F2 "EIA Standart:SOT-23" 600 600 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 650 800 50 H I C CNN "Spice_Primitive"
+F5 "BFR92P" 650 700 50 H I C CNN "Spice_Model"
+F6 "Y" 650 900 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Users\\Stolte\\Desktop\\git\\Private\\KiCAD_Libs\\Spice Models\\BJT\\2N2222.LIB" 600 500 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 -100 0 50 R 25 25 1 1 I
+X ~ 2 0 -100 50 U 25 25 1 1 P
+X ~ 3 0 100 50 D 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BFR92P
+#
+DEF BFR92P T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "BFR92P" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "BFR92P" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\BJT\\Infineon-RFTransistor.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DXT2011P5
+#
+DEF DXT2011P5 Q 0 40 Y Y 1 F N
+F0 "Q" 0 300 50 H V C CNN
+F1 "DXT2011P5" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Q" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "DXT2011P5" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "${KIPRV_SPICE}\\BJT\\DXT2011P5.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# FMMT493
+#
+DEF FMMT493 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "FMMT493" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Q" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "FMMT493" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "${KIPRV_SPICE}\\BJT\\FMMT493.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# FMMT723
+#
+DEF FMMT723 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "FMMT723" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Q" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "FMMT723" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "${KIPRV_SPICE}\\BJT\\FMMT723.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -30 -30 -30 -40 -20 -30 -30 -30 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MMBT3904
+#
+DEF MMBT3904 T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "MMBT3904" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Q" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "DI_MMBT3904" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Users\\Stolte\\Desktop\\git\\Private\\KiCAD_Libs\\Spice Models\\BJT\\MMBT3904.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ZXTN26070CV
+#
+DEF ZXTN26070CV T 0 40 Y Y 1 F N
+F0 "T" 0 300 50 H V C CNN
+F1 "ZXTN26070CV" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Q" 0 300 50 H I C CNN "Spice_Primitive"
+F5 "ZXTN26070" 0 300 50 H I C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\BJT\\ZXTN26070CV.lib" 0 300 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

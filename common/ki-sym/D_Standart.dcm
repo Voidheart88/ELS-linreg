@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CGRC501
+D 5A 50V
+F ${KIPRV_DATASHEET}/CGRC501-G.pdf
+$ENDCMP
+#
+#End Doc Library

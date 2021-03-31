@@ -1,0 +1,394 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 1
+#
+DEF 1 K 0 40 Y Y 1 F N
+F0 "K" 0 150 50 H V C CNN
+F1 "1" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 0 50 0 0 0 K Normal 0 C C
+S -100 100 100 -100 0 1 0 f
+P 2 0 0 0 -100 -50 -150 -50 N
+P 2 0 0 0 -100 50 -150 50 N
+P 2 0 0 0 100 -50 150 -50 N
+P 2 0 0 0 100 50 150 50 N
+ENDDRAW
+ENDDEF
+#
+# Battery
+#
+DEF Battery V 0 40 Y N 1 F N
+F0 "V" 100 0 50 H V C CNN
+F1 "Battery" -200 0 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+P 2 0 1 0 -40 10 40 10 N
+P 2 0 1 0 -20 -10 20 -10 N
+P 2 0 1 0 40 -40 60 -40 N
+P 2 0 1 0 40 40 60 40 N
+P 2 0 1 0 50 30 50 50 N
+X + 1 0 50 39 D 25 25 1 1 w
+X - 2 0 -50 39 U 25 25 1 1 w
+ENDDRAW
+ENDDEF
+#
+# C
+#
+DEF C C 0 40 N N 1 F N
+F0 "C" 0 110 50 H V C CNN
+F1 "C" 0 -90 50 H V C CNN
+F2 "EIA Standart:0805" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -20 50 -20 -50 N
+P 2 0 1 0 20 50 20 -50 N
+X 1 1 -50 0 30 R 50 50 1 1 P
+X 2 2 50 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Coupler
+#
+DEF Coupler K 0 40 Y Y 1 F N
+F0 "K" 0 150 50 H V C CNN
+F1 "Coupler" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 150 50 H V C CNN "Spice_Primitive"
+F5 "Coupler" 0 150 50 H I C CNN "Spice_Model"
+F6 "Y" 0 150 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 0 150 50 H I C CNN "Spice_Lib_File"
+DRAW
+T 0 0 0 50 0 0 0 C Normal 0 C C
+S -50 100 50 -100 0 1 0 f
+ENDDRAW
+ENDDEF
+#
+# Cp
+#
+DEF Cp C 0 40 N N 1 F N
+F0 "C" 0 110 50 H V C CNN
+F1 "Cp" 0 -90 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -50 20 -30 20 N
+P 2 0 1 0 -40 30 -40 10 N
+P 2 0 1 0 -20 50 -20 -50 N
+P 2 0 1 12 20 50 20 -50 N
+X 1 1 -50 0 30 R 50 50 1 1 P
+X 2 2 50 0 31 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# D
+#
+DEF D D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "D" 0 -100 50 H V C CNN
+F2 "" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "D" 0 100 50 H I C CNN "Spice_Primitive"
+F5 "D" 0 100 50 H I C CNN "Spice_Model"
+F6 "Y" 0 100 50 H I C CNN "Spice_Netlist_Enabled"
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X A 1 100 0 50 L 50 50 1 1 P
+X K 2 -100 0 50 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Diode_Zener
+#
+DEF Diode_Zener D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_Zener" 0 550 50 H I C CNN
+F2 "Diode_THT:D_DO-201_P15.24mm_Horizontal" 0 450 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 200 50 H I C CNN "Spice_Primitive"
+F5 "Zener" 0 200 50 H V C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 0 750 50 H I C CNN "Spice_Lib_File"
+$FPLIST
+ D*DO?201*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 8 -50 -50 -50 50 -30 50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+X A 1 100 0 50 L 50 50 1 1 P
+X K 2 -100 0 50 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Diode_schottky
+#
+DEF Diode_schottky D 0 40 N N 1 F N
+F0 "D" -5 90 50 H V C CNN
+F1 "Diode_schottky" 35 -100 50 H V C CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+P 2 0 0 0 50 0 -50 0 N
+P 4 0 0 0 30 -50 50 -50 50 50 70 50 N
+P 4 0 1 0 -50 50 -50 -50 50 0 -50 50 N
+X 1 1 -100 0 50 R 50 50 1 1 P
+X 2 2 100 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Diode_supressor
+#
+DEF Diode_supressor D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_supressor" 35 -100 50 H V C CNN
+F2 "" -150 0 50 H I C CNN
+F3 "" -150 0 50 H I C CNN
+DRAW
+P 2 0 0 0 0 0 -100 0 N
+P 4 0 0 0 -20 -50 0 -50 0 50 20 50 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 N
+P 2 1 1 0 0 0 100 0 N
+P 4 1 1 0 100 -50 100 50 0 0 100 -50 N
+X 1 1 150 0 50 L 50 50 1 1 P
+X 2 2 -150 0 50 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Fuse
+#
+DEF Fuse Q 0 40 N N 1 F N
+F0 "Q" 0 100 50 H V C CNN
+F1 "Fuse" 0 -100 50 H I C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -60 0 60 0 N
+P 5 0 1 0 -60 30 -60 -30 60 -30 60 30 -60 30 N
+X 1 1 -100 0 39 R 50 50 1 1 P
+X 2 2 100 0 39 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# L
+#
+DEF L L 0 40 N N 1 F N
+F0 "L" 0 100 50 H V C CNN
+F1 "L" 0 -100 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+C -80 50 5 0 1 3 F
+P 5 0 1 0 -60 30 -60 -30 60 -30 60 30 -60 30 F
+X 1 1 -100 0 39 R 50 50 1 1 P
+X 2 2 100 0 39 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED
+#
+DEF LED D 0 40 N N 1 F N
+F0 "D" 200 -200 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
+F2 "" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 5 0 1 0 -30 60 -50 80 -50 70 -40 80 -50 80 N
+P 5 0 1 0 -10 80 -30 100 -30 90 -20 100 -30 100 N
+X K 1 -100 0 50 R 50 50 1 1 P
+X A 2 100 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# NJFET
+#
+DEF NJFET J 0 40 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "NJFET" 0 -190 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -50 -50 -50 -60 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -50 50 -50 60 N
+P 3 0 1 0 0 -70 0 -45 -50 -45 N
+P 3 0 1 0 0 70 0 45 -50 45 N
+P 4 0 1 0 -70 -40 -70 -60 -60 -50 -70 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 -50 50 R 25 25 1 1 P
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# NMOS
+#
+DEF NMOS Q 0 40 N N 1 F N
+F0 "Q" 50 -50 50 H V C CNN
+F1 "NMOS" 150 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 300 350 50 H I C CNN "Spice_Primitive"
+F5 "nmos" 50 400 50 H I C CNN "Spice_Model"
+F6 "Y" -250 400 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 200 550 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -30 -50 -30 -30 N
+P 2 0 1 0 -30 -10 -30 10 N
+P 2 0 1 0 -30 30 -30 50 N
+P 2 0 1 0 0 -40 0 -50 N
+P 3 0 1 0 -30 40 0 40 0 50 N
+P 4 0 1 0 -30 0 -20 10 -20 -10 -30 0 N
+P 4 0 1 0 -30 0 0 0 0 -40 -30 -40 N
+X D 1 0 100 50 D 25 25 1 1 P
+X G 2 -100 -50 50 R 25 25 1 1 I
+X S 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# NPN
+#
+DEF NPN Q 0 40 Y Y 1 F N
+F0 "Q" 100 -50 50 H V C CNN
+F1 "NPN" 100 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" -100 600 50 H I C CNN "Spice_Primitive"
+F5 "npn" 200 600 50 H I C CNN "Spice_Model"
+F6 "Y" 0 600 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Users\\Stolte\\Desktop\\git\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 250 400 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 0 -50 -50 -20 N
+P 2 0 1 0 0 50 -50 20 N
+P 4 0 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PJFET_copy
+#
+DEF PJFET_copy J 0 40 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "PJFET_copy" 0 -190 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -50 -50 -50 -60 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -50 50 -50 60 N
+P 3 0 1 0 0 -70 0 -45 -50 -45 N
+P 3 0 1 0 0 70 0 45 -50 45 N
+P 4 0 1 0 -60 -60 -60 -40 -70 -50 -60 -60 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 -50 50 R 25 25 1 1 P
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PMOS
+#
+DEF PMOS Q 0 40 N N 1 F N
+F0 "Q" 50 -50 50 H V C CNN
+F1 "PMOS" 150 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 300 350 50 H I C CNN "Spice_Primitive"
+F5 "pmos" 50 400 50 H I C CNN "Spice_Model"
+F6 "Y" -250 400 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 200 550 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -30 -50 -30 -30 N
+P 2 0 1 0 -30 -10 -30 10 N
+P 2 0 1 0 -30 30 -30 50 N
+P 2 0 1 0 0 -40 0 -50 N
+P 3 0 1 0 -30 40 0 40 0 50 N
+P 4 0 1 0 -30 0 0 0 0 -40 -30 -40 N
+P 4 0 1 0 -10 0 -20 -10 -20 10 -10 0 N
+X D 1 0 100 50 D 25 25 1 1 P
+X G 2 -100 -50 50 R 25 25 1 1 I
+X S 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PNP
+#
+DEF PNP Q 0 40 Y Y 1 F N
+F0 "Q" 100 -50 50 H V C CNN
+F1 "PNP" 100 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" -100 600 50 H I C CNN "Spice_Primitive"
+F5 "pnp" 200 600 50 H I C CNN "Spice_Model"
+F6 "Y" 0 600 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Users\\Stolte\\Desktop\\git\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 250 400 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 0 -50 -50 -20 N
+P 2 0 1 0 0 50 -50 20 N
+P 4 0 1 0 -30 -30 -30 -40 -20 -30 -30 -30 N
+X ~ 1 0 100 50 D 25 25 1 1 P
+X ~ 2 -100 0 50 R 25 25 1 1 I
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Pot
+#
+DEF Pot R 0 40 N N 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "Pot" 0 -100 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -50 -50 50 50 N
+P 4 0 1 0 50 50 50 40 40 50 50 50 N
+P 5 0 1 0 -60 30 -60 -30 60 -30 60 30 -60 30 N
+X 1 1 -100 0 39 R 50 50 1 1 P
+X 2 2 100 0 39 L 50 50 1 1 P
+X ~ 3 -50 -50 0 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# R
+#
+DEF R R 0 40 N N 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "R" 0 -100 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 5 0 1 0 -60 30 -60 -30 60 -30 60 30 -60 30 N
+X 1 1 -100 0 39 R 50 50 1 1 P
+X 2 2 100 0 39 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# R_prec
+#
+DEF R_prec R 0 40 N N 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "R_prec" 0 -100 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+T 0 0 5 25 0 0 0 prec Normal 0 C C
+P 5 0 1 0 -60 30 -60 -30 60 -30 60 30 -60 30 N
+X 1 1 -100 0 39 R 50 50 1 1 P
+X 2 2 100 0 39 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

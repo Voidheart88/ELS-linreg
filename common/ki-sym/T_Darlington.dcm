@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BDX33C
+D NPN 100V 10A B:750
+F ${KIPRV_DATASHEET}\BDX33B-D.PDF
+$ENDCMP
+#
+#End Doc Library

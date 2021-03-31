@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BDX33C
+#
+DEF BDX33C U 0 40 Y Y 1 F N
+F0 "U" 50 50 50 H V L CNN
+F1 "BDX33C" 50 -50 50 H V L CNN
+F2 "" 200 50 50 H I C CNN
+F3 "" 200 50 50 H I C CNN
+F4 "X" 50 50 50 H I L CNN "Spice_Primitive"
+F5 "bdx33c" 50 50 50 H I L CNN "Spice_Model"
+F6 "Y" 50 50 50 H I L CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\Darlington\\BDX33C.lib" 50 50 50 H I L CNN "Spice_Lib_File"
+DRAW
+P 2 1 1 0 -50 50 -50 -50 N
+P 2 1 1 0 0 -50 -50 -20 N
+P 2 1 1 0 0 50 -50 20 N
+P 2 1 1 0 0 60 -50 30 N
+P 4 1 1 0 -20 -40 -20 -30 -30 -40 -20 -40 N
+X ~ 1 -100 0 50 R 25 25 1 1 I
+X ~ 2 0 100 50 D 25 25 1 1 P
+X ~ 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

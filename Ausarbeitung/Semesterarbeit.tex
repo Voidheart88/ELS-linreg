@@ -1,0 +1,20 @@
+\input{preambel}
+\input{environments}
+
+\begin{document}
+  \selectlanguage{ngerman}
+  \input{kapitel/titelseite}
+  \input{kapitel/erklaerung}
+  \input{kapitel/abstract}
+  \tableofcontents
+  \input{kapitel/kapitel1}  %Einleitung
+  \input{kapitel/kapitel2}  %Grundlagen
+  \input{kapitel/kapitel3}  %Durchführung
+  \input{kapitel/kapitel4}  %Ergebnisse
+  \newpage
+  \addcontentsline{toc}{chapter}{Quellen}
+  \bibliography{literatur}
+  \addcontentsline{toc}{chapter}{Abbildungen}  
+  \listoffigures
+  \input{anhang.tex}
+\end{document}

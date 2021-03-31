@@ -1,0 +1,80 @@
+\chapter{Grundlagen}
+  Dieses Kapitel beschäftigt sich mit den Grundlagen der Energieerzeugung aus regenerativen Energiequellen und den Grundlagen nutzbarer Energiespeichersysteme.
+
+  \section{Definition Inselanlage}
+    Als eine Inselanlage im Sinne dieser Arbeit ist ein festinstalliertes Energienetz ohne Anbindung an öffentliche Versorgungsleitungen.
+    Dies betrifft sowohl elektrische Energie als auch mögliche Gasleitungen.
+    Das Einsatzgebiet von Inselanlagen sind Orte an denen der Anschluss an das öffentliche Netz nicht möglich oder nicht wirtschaftlich ist.
+    Diese Arbeit beschränkt sich auf Inselanlagen für Wohneinheiten. Inselanlagen für z.B. Parkscheinautomaten oder Verkehrsüberwachungsanlagen sind nicht Teil dieser Arbeit, obgleich sich Teile dieser Arbeit, insbesondere die Auslegung der Energiegeneratoren auch auf diese Anlagen übertragen ließen.
+
+  \section{Energieerzeugung aus regenerativen und nicht regenerativen Energiequellen}
+    Die zur Energieerzeugung notwendigen Grundlagen werden in diesem Abschnitt behandelt.
+    Es soll hier näher auf die Möglichkeiten der Erzeugung elektrischer Energie eingegangen werden.
+    Zum Zwecke der Übersichtlichkeit wird hier nur auf die gängigsten Methoden der Energieerzeugung eingegangen und auf, nur an sehr wenigen Orten einsetzbare Methoden, wie Wasserkraft und Geothermie, verzichtet.
+
+    \subsection{Energieerzeugung aus Sonnenenergie}
+    Die Sonne, das Zentralgestirn des Sonnensystems, ist ein \(\mathrm{1,9884\cdot 10^{30}\,kg}\) schwerer Gasball dessen Hauptbestandteile Wasserstoff (\(\mathrm{90,97\,\%}\)) und Helium (\( \mathrm{ 8,89\,\%}\))\cite{Webp:NASAFFSheet} sind.
+    Durch die eigene Masse wird dieser Gasball in seinem Zentrum zusammengepresst, wodurch sich das Gas, auf eine Temperatur von \(\mathrm{1,571\cdot 10^{7}\,K}\), bei einem Druck von \(\mathrm{2,477\cdot 10^{11}\,bar}\)\cite{Webp:NASAFFSheet}, aufheizt.
+    Durch diese Extrembedingungen kommt es im Kern der Sonne zu Fusionsreaktionen, bei denen Wasserstoffkerne unter Energiefreisetzung erst zu Helium-3 und dann zu Helium-4 verschmelzen.
+    Als Maß für die die Erde erreichende Strahlungsenergie dient die Solarkonstante \(\mathrm{E_0}\), welche von der World Meteorological Organisation (WMO) in Genf im Jahre 1982 auf den Wert \(\mathrm{E_0 = 1367 \frac{W}{m^2}}\) festgelegt wurde.\cite[S8]{BK:GPHV}
+    Es gibt die Möglichkeit die Strahlungsenergie direkt (Photovoltaik), oder diese über einen thermodynamischen Kreisprozess mittels Wärmekraftmaschine, in elektrische Energie zu wandeln.
+    Weiterhin besteht die Möglichkeit, statt in elektrische Energie, die Sonnenenergie in Wärme zu wandeln (Solarthermie).
+    Im Falle der elektrischen Energieerzeugung besteht das System aus einem Solargenerator der einen Gleichstrom erzeugt und einem Wechselrichter der diesen Gleichstrom in einen Wechselstrom wandelt.
+    Die Wirkungsgrade \(\eta_\mathrm{spv}\) für waferbasierte Solarzellen betragen zwischen 17\,\% und 22\,\%~\cite[S41]{Webp:ISESOLAR} und wird in dieser Arbeit mit 19,5\,\% angenommen.
+    Der Wirkungsgrad \(\eta_\mathrm{wr}\) eines Solarwechselrichters beträgt aktuell ca. 98\,\%~\cite[S42]{Webp:ISESOLAR}
+
+    \subsection{Energieerzeugung aus Windenergie}
+    Die Windenergie ist eine Energie, welche durch Unterschiede in der Luftdruckverteilung entsteht.
+    Diese Unterschiede führen zu einem Massenstrom welcher maximaler Enthropie entgegen strebt (Druckausgleich).
+    Hauptgrund für die Windentstehung in der planetaren Grenzschicht ist die Erwärmung von Luftmassen über Gebieten geringer Wärmekapazität.\cite[S 4.24]{TR:REN1}
+    Zur technischen Nutzung von Windenergie steht die Energiewandlung nach dem Widerstandsprinzip und nach dem Auftriebsprinzip zur Verfügung, wobei nur die Energiewandlung nach dem Auftriebsprinzip eine technische Nutzung erfährt.
+    Dies ist begründet in der Tatsache das Windenergieanlagen nach dem Auftriebsprinzip eine wesentlich höhere Ausnutzung der im Wind enthaltenen Energie erlauben.
+
+    \subsection{Energieerzeugung mittels Brennstoffzelle}
+    Die Brennstoffzelle ist eine Energiewandlungstechnik die darauf basiert, Wasserstoff und Sauerstoff ohne Verbrennung miteinander reagieren zu lassen.
+    Dafür gibt es zwei Kammern die mit einer semipermeablen Barriere voneinander getrennt sind.
+    Diese Barriere ist in der Lage, Protonen des Wasserstoffs passieren zu lassen.
+    Die Elektronen des Wasserstoffs müssen einen anderen Weg, über einen Stromkreis, nehmen, um zum Sauerstoff zu gelangen.
+    Ein großer Vorteil bei der Energiewandlung mittels Brennstoffzelle ist, dass keine mechanischen Teile für die Energiewandlung notwendig sind und als Abfallprodukt nur Wasser entsteht.
+    Das entstandene Wasser ließe sich in einem Haushalt nach Zugabe von Mineralstoffen als Trinkwasser verwenden.
+    Da für den Betrieb einer Brennstoffzelle der Transport eines Treibstoffes notwendig ist, verzichtet diese Arbeit auf die Betrachtung der Brennstoffzelle als Energieerzeugungsform.
+    Wohl aber ist es möglich die Brennstoffzelle zur Speicherung überschüssiger Energie zu verwenden.
+    Der Wirkungsgrad dieser Anlagen beträgt dafür bis zu 70\%.\cite{Art:ENERGYENV}
+
+  \section{Energiespeicherung von elektrischer und thermischer Energie}
+    Dieser Abschnitt dient der Beschreibung von Energiespeichern welche zur Speicherung thermischer und elektrischer Energie genutzt werden können.
+    \subsection{Akkumulatorspeicher}
+    Akkumulatorspeicher speichern die elektrische Energie auf elektrochemischer Basis. Die Wiederaufladefähigkeit basiert auf der Umkehrung der Prozesse die zur Energiegewinnung aus der chemischen Energie genutzt werden.
+    Der Wirkungsgrad beträgt zwischen 60\% (Bleiakkumulatoren) und zu 94\% (Litium-Eisenphosphat-Akkumulatoren).
+
+    \subsection{Thermische Energiespeicher}
+    Thermische Wärmespeicher kann man in 3 verschiedene Gruppen unterteilen: 
+    \begin{itemize}
+      \item Sensible Wärmespeicher die ihre Temperatur beim Entnehmen und Speichern der Wärme verändern.
+      \item Latentwärmespeicher die nicht ihre Temperatur sondern ihren Aggregatzustand zum Speichern der Wärme ändern.
+      \item Thermochemische Wärmespeicher die mittels Adsorbtion und Desorbtion von Flüssigkeiten, meist Wasser, in der Lage sind Wärme zu speichern und abzugeben.
+    \end{itemize}
+  \section{Auswahl der Standorte}
+    \begin{figure}[h]
+        \vspace{-10pt}
+        \centering 
+        \includegraphics[width=6cm]{src/WetterAliceSprings/alice_sun.pdf}
+        \includegraphics[width=6cm]{src/WetterOulu/oulu_sun.pdf}
+        \includegraphics[width=6cm]{src/WetterAliceSprings/alice_wind.pdf}
+        \includegraphics[width=6cm]{src/WetterOulu/oulu_wind.pdf}
+        \includegraphics[width=6cm]{src/WetterAliceSprings/alice_temp.pdf}
+        \includegraphics[width=6cm]{src/WetterOulu/oulu_temp.pdf}
+        \caption[Wetterdaten Oulu \& Alice Springs]{Wetterdaten Oulu \& Alice Springs, Quelle:\cite{Webp:WWOAS}\cite{Webp:WWOFIN}}\label{fig:WTR}
+        \vspace{-5pt}
+    \end{figure}
+      Ziel dieses Abschnittes ist es zwei Standorte zu wählen und vorzustellen.
+      Für die Modellierung eines Standortes, im Sinne dieser Arbeit, wurden statistische Daten zweier Standorte hinzugezogen.
+      \subsubsection{Standort Oulu}
+        Als erster Standort wurde der Ort Oulu, die nördlichste europäische Großstadt, in Finnland ausgewählt.
+        Grund hierfür ist die gute Datenlage über das finnische Statistikamt und das Vorhandensein von Orten für die ein Inselnetz lohnenswert ist.
+        Abb.~\ref{fig:WTR} zeigt die durchschnittlichen Sonnenstunden, die durchschnittlichen Temperaturen, sowie die durchschnittlichen Windgeschwindigkeiten je Monat, der letzten 10 Jahre, die aus dem Datensatz gewonnen wurden.
+        
+      \subsubsection{Standort AliceSprings}
+        Als zweiter Standort wurde Alice Springs in Australien ausgewählt.
+        Als Flächenkontinent mit ausgedehnten Wüsten und dünner Besiedlung besteht in Australien ein großer Bedarf an Inselanlagen.
+        Zusätzlich besteht über das australische Statistikamt eine Datenbasis für aktuelle und vergangene Klimadaten wie in Abb~\ref{fig:WTR} gezeigt.

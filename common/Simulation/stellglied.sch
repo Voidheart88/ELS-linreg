@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 5350 5250 0    50   ~ 0
-.model d_z d bv=7.5
 $Comp
 L T_BJT:2N2907 T?
 U 1 1 606B0ED0
@@ -80,8 +78,6 @@ F 3 "" H 5450 4550 50  0001 C CNN
 	1    5450 4550
 	1    0    0    -1  
 $EndComp
-Text Notes 4950 3000 0    100  ~ 0
-Voltage Regulator
 Wire Wire Line
 	5450 3500 5450 3400
 $Comp
@@ -207,6 +203,6 @@ F 3 "" H 5150 4550 50  0001 C CNN
 	1    5150 4550
 	1    0    0    -1  
 $EndComp
-Text Notes 5350 5000 0    50   ~ 0
+Text Notes 3650 4350 0    50   ~ 0
 .dc v2 13.7 14.5 1m
 $EndSCHEMATC

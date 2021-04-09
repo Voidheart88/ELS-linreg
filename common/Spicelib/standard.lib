@@ -10,7 +10,7 @@
 
 .model Z_2_5 d BV=2.55
 .model Z_5 d BV=5.05
-.model Z_x d BV=4.7
+.model Z_x d BV=10
 
 .SUBCKT Comparator IH IL OH OL
   ECMP OH OL TABLE {V(IH,IL)} = (-5mV, 0V) (5mV, 5V)

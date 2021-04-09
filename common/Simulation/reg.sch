@@ -26,7 +26,7 @@ F 3 "${KIPRV_DATASHEET}/2N2222.pdf" H 3500 2100 50  0001 C CNN
 F 4 "Q" H 3500 2400 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2222A" H 3500 2400 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 3500 2400 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 3500 2400 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/BJT.lib" H 3500 2400 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-2956-1-ND" H 3500 2100 50  0001 C CNN "Bestellnummer"
 	1    3500 2100
 	1    0    0    -1  
@@ -142,7 +142,7 @@ P 2950 2200
 AR Path="/5FA653F4/5FA3888D" Ref="R?"  Part="1" 
 AR Path="/5FA3888D" Ref="R3"  Part="1" 
 F 0 "R3" H 2950 2005 50  0000 C CNN
-F 1 "15k" H 2950 2096 50  0000 C CNN
+F 1 "10" H 2950 2096 50  0000 C CNN
 F 2 "EIA Standart:R_0805" H 2940 2200 50  0001 C CNN
 F 3 "" H 2940 2200 50  0001 C CNN
 F 4 "in Stock" H 2950 2200 50  0001 C CNN "Bestellnummer"
@@ -185,7 +185,7 @@ F 3 "" H 2750 2450 50  0001 C CNN
 F 4 "D" H 2750 2650 50  0001 C CNN "Spice_Primitive"
 F 5 "d_z" V 2795 2529 50  0000 L CNN "Spice_Model"
 F 6 "Y" H 2750 2750 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\standart.lib" H 2750 3200 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/standard.lib" H 2750 3200 50  0001 C CNN "Spice_Lib_File"
 F 8 "641-1036-1-ND" H 2750 2450 50  0001 C CNN "Bestellnummer"
 	1    2750 2450
 	0    1    1    0   
@@ -213,7 +213,7 @@ P 4750 1400
 AR Path="/5FA653F4/5FA388C1" Ref="R?"  Part="1" 
 AR Path="/5FA388C1" Ref="R6"  Part="1" 
 F 0 "R6" V 4796 1342 50  0000 R CNN
-F 1 "30k" V 4705 1342 50  0000 R CNN
+F 1 "15k" V 4705 1342 50  0000 R CNN
 F 2 "EIA Standart:R_0805" H 4740 1400 50  0001 C CNN
 F 3 "" H 4740 1400 50  0001 C CNN
 F 4 "in Stock" H 4750 1400 50  0001 C CNN "Bestellnummer"
@@ -227,7 +227,7 @@ P 4750 2450
 AR Path="/5FA653F4/5FA388C7" Ref="R?"  Part="1" 
 AR Path="/5FA388C7" Ref="R7"  Part="1" 
 F 0 "R7" V 4796 2392 50  0000 R CNN
-F 1 "30k" V 4705 2392 50  0000 R CNN
+F 1 "7.5k" V 4705 2392 50  0000 R CNN
 F 2 "EIA Standart:R_0805" H 4740 2450 50  0001 C CNN
 F 3 "" H 4740 2450 50  0001 C CNN
 F 4 "in Stock" H 4750 2450 50  0001 C CNN "Bestellnummer"
@@ -293,7 +293,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 2500 800 50  0001 C CNN
 F 4 "Q" H 2500 1100 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 2500 1100 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 2500 1100 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 2500 1100 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/BJT.lib" H 2500 1100 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 2500 800 50  0001 C CNN "Bestellnummer"
 	1    2500 800 
 	0    1    -1   0   
@@ -330,7 +330,7 @@ F 3 "" H 2000 1900 50  0001 C CNN
 F 4 "J" H 2000 2250 50  0001 C CNN "Spice_Primitive"
 F 5 "J2SK152" H 2000 2250 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 2000 2250 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\JFET.lib" H 2000 2250 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/JFET.lib" H 2000 2250 50  0001 C CNN "Spice_Lib_File"
 F 8 "MMBF4393LT3GOSCT-ND" H 2000 1900 50  0001 C CNN "Bestellnummer"
 	1    2000 1900
 	-1   0    0    -1  
@@ -500,7 +500,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 3500 1150 50  0001 C CNN
 F 4 "Q" H 3500 1450 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 3500 1450 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 3500 1450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 3500 1450 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/BJT.lib" H 3500 1450 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 3500 1150 50  0001 C CNN "Bestellnummer"
 	1    3500 1150
 	-1   0    0    1   
@@ -518,7 +518,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 4150 1150 50  0001 C CNN
 F 4 "Q" H 4150 1450 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 4150 1450 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 4150 1450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 4150 1450 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/BJT.lib" H 4150 1450 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 4150 1150 50  0001 C CNN "Bestellnummer"
 	1    4150 1150
 	1    0    0    1   
@@ -536,7 +536,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 3500 1550 50  0001 C CNN
 F 4 "Q" H 3500 1850 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 3500 1850 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 3500 1850 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 3500 1850 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/BJT.lib" H 3500 1850 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 3500 1550 50  0001 C CNN "Bestellnummer"
 	1    3500 1550
 	-1   0    0    1   
@@ -554,7 +554,7 @@ F 3 "${KIPRV_DATASHEET}/2N2222.pdf" H 4150 2100 50  0001 C CNN
 F 4 "Q" H 4150 2400 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2222A" H 4150 2400 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 4150 2400 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 4150 2400 50  0001 C CNN "Spice_Lib_File"
+F 7 "./../Spicelib/BJT.lib" H 4150 2400 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-2956-1-ND" H 4150 2100 50  0001 C CNN "Bestellnummer"
 	1    4150 2100
 	-1   0    0    -1  
@@ -562,7 +562,7 @@ $EndComp
 Text Notes 1150 3350 0    50   ~ 0
 ;tran 1u 150m
 Text Notes 1150 3700 0    50   ~ 0
-.model d_z d bv=7.5
+.model d_z d bv=10
 Text Notes 1150 3450 0    50   ~ 0
 .ac dec 1000 1 10Meg
 Wire Wire Line

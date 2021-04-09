@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:wien-osz-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,7 +26,7 @@ F 3 "${KIPRV_DATASHEET}/2N2222.pdf" H 3500 2100 50  0001 C CNN
 F 4 "Q" H 3500 2400 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2222A" H 3500 2400 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 3500 2400 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 3500 2400 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\BJT.lib" H 3500 2400 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-2956-1-ND" H 3500 2100 50  0001 C CNN "Bestellnummer"
 	1    3500 2100
 	1    0    0    -1  
@@ -186,7 +185,7 @@ F 3 "" H 2750 2450 50  0001 C CNN
 F 4 "D" H 2750 2650 50  0001 C CNN "Spice_Primitive"
 F 5 "d_z" V 2795 2529 50  0000 L CNN "Spice_Model"
 F 6 "Y" H 2750 2750 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\standart.lib" H 2750 3200 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\standart.lib" H 2750 3200 50  0001 C CNN "Spice_Lib_File"
 F 8 "641-1036-1-ND" H 2750 2450 50  0001 C CNN "Bestellnummer"
 	1    2750 2450
 	0    1    1    0   
@@ -294,7 +293,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 2500 800 50  0001 C CNN
 F 4 "Q" H 2500 1100 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 2500 1100 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 2500 1100 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 2500 1100 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\BJT.lib" H 2500 1100 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 2500 800 50  0001 C CNN "Bestellnummer"
 	1    2500 800 
 	0    1    -1   0   
@@ -331,7 +330,7 @@ F 3 "" H 2000 1900 50  0001 C CNN
 F 4 "J" H 2000 2250 50  0001 C CNN "Spice_Primitive"
 F 5 "J2SK152" H 2000 2250 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 2000 2250 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\JFET.lib" H 2000 2250 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\JFET.lib" H 2000 2250 50  0001 C CNN "Spice_Lib_File"
 F 8 "MMBF4393LT3GOSCT-ND" H 2000 1900 50  0001 C CNN "Bestellnummer"
 	1    2000 1900
 	-1   0    0    -1  
@@ -501,7 +500,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 3500 1150 50  0001 C CNN
 F 4 "Q" H 3500 1450 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 3500 1450 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 3500 1450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 3500 1450 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\BJT.lib" H 3500 1450 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 3500 1150 50  0001 C CNN "Bestellnummer"
 	1    3500 1150
 	-1   0    0    1   
@@ -519,7 +518,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 4150 1150 50  0001 C CNN
 F 4 "Q" H 4150 1450 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 4150 1450 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 4150 1450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 4150 1450 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\BJT.lib" H 4150 1450 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 4150 1150 50  0001 C CNN "Bestellnummer"
 	1    4150 1150
 	1    0    0    1   
@@ -537,7 +536,7 @@ F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 3500 1550 50  0001 C CNN
 F 4 "Q" H 3500 1850 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2907" H 3500 1850 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 3500 1850 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 3500 1850 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\BJT.lib" H 3500 1850 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-1884-1-ND" H 3500 1550 50  0001 C CNN "Bestellnummer"
 	1    3500 1550
 	-1   0    0    1   
@@ -555,7 +554,7 @@ F 3 "${KIPRV_DATASHEET}/2N2222.pdf" H 4150 2100 50  0001 C CNN
 F 4 "Q" H 4150 2400 50  0001 C CNN "Spice_Primitive"
 F 5 "2N2222A" H 4150 2400 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 4150 2400 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 4150 2400 50  0001 C CNN "Spice_Lib_File"
+F 7 ".\\..\\Spicelib\\BJT.lib" H 4150 2400 50  0001 C CNN "Spice_Lib_File"
 F 8 "1727-2956-1-ND" H 4150 2100 50  0001 C CNN "Bestellnummer"
 	1    4150 2100
 	-1   0    0    -1  
@@ -607,133 +606,4 @@ F 3 "" H 1850 800 50  0001 C CNN
 	1    1850 800 
 	1    0    0    -1  
 $EndComp
-$Comp
-L T_BJT:2N2907 T?
-U 1 1 606B0ED0
-P 2000 5450
-AR Path="/5FA653F4/606B0ED0" Ref="T?"  Part="1" 
-AR Path="/606B0ED0" Ref="T?"  Part="1" 
-F 0 "T?" V 2181 5450 50  0000 C CNN
-F 1 "PMBT2907" V 2090 5450 50  0000 C CNN
-F 2 "EIA Standart:SOT-23" H 2000 5450 50  0001 C CNN
-F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 2000 5450 50  0001 C CNN
-F 4 "Q" H 2000 5750 50  0001 C CNN "Spice_Primitive"
-F 5 "2N2907" H 2000 5750 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 2000 5750 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\BJT.lib" H 2000 5750 50  0001 C CNN "Spice_Lib_File"
-F 8 "1727-1884-1-ND" H 2000 5450 50  0001 C CNN "Bestellnummer"
-	1    2000 5450
-	1    0    0    1   
-$EndComp
-$Comp
-L Standard:R R?
-U 1 1 606B0ED7
-P 1500 5650
-AR Path="/5FA653F4/606B0ED7" Ref="R?"  Part="1" 
-AR Path="/606B0ED7" Ref="R?"  Part="1" 
-F 0 "R?" V 1454 5708 50  0000 L CNN
-F 1 "4k" V 1545 5708 50  0000 L CNN
-F 2 "EIA Standart:R_0805" H 1490 5650 50  0001 C CNN
-F 3 "" H 1490 5650 50  0001 C CNN
-F 4 "in Stock" H 1500 5650 50  0001 C CNN "Bestellnummer"
-	1    1500 5650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1500 5550 1500 5450
-$Comp
-L T_JFET:J2SK152 J?
-U 1 1 606B0EE4
-P 1500 5200
-AR Path="/5FA653F4/606B0EE4" Ref="J?"  Part="1" 
-AR Path="/606B0EE4" Ref="J?"  Part="1" 
-F 0 "J?" H 1544 5246 50  0000 L CNN
-F 1 "MMBF4393" H 1544 5155 50  0000 L CNN
-F 2 "EIA Standart:SOT-23_A" H 1500 5200 50  0001 C CNN
-F 3 "" H 1500 5200 50  0001 C CNN
-F 4 "J" H 1500 5550 50  0001 C CNN "Spice_Primitive"
-F 5 "J2SK152" H 1500 5550 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 1500 5550 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "C:\\Studium\\Master\\ELS\\Semesterarbeit\\common\\Spicelib\\JFET.lib" H 1500 5550 50  0001 C CNN "Spice_Lib_File"
-F 8 "MMBF4393LT3GOSCT-ND" H 1500 5200 50  0001 C CNN "Bestellnummer"
-	1    1500 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 5250 1250 5250
-Wire Wire Line
-	1500 5300 1500 5450
-$Comp
-L standard_power:0 #PWR?
-U 1 1 606B0EF9
-P 1500 6150
-F 0 "#PWR?" H 1700 6150 50  0001 C CNN
-F 1 "0" H 1500 6050 25  0001 C CNN
-F 2 "" H 1500 6150 50  0001 C CNN
-F 3 "" H 1500 6150 50  0001 C CNN
-	1    1500 6150
-	1    0    0    -1  
-$EndComp
-Text Notes 1000 4600 0    100  ~ 0
-Voltage Regulator
-Wire Wire Line
-	1500 5100 1500 5000
-$Comp
-L standard_power:VCC #PWR?
-U 1 1 606B0F0C
-P 1500 4900
-F 0 "#PWR?" H 1600 4900 50  0001 C CNN
-F 1 "VCC" H 1500 4975 50  0000 C CNN
-F 2 "" H 1500 4900 50  0001 C CNN
-F 3 "" H 1500 4900 50  0001 C CNN
-	1    1500 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 5750 1500 6150
-Wire Wire Line
-	2000 5350 2000 5250
-$Comp
-L standard_power:VCC #PWR?
-U 1 1 606D0D87
-P 2000 5150
-F 0 "#PWR?" H 2100 5150 50  0001 C CNN
-F 1 "VCC" H 2000 5225 50  0000 C CNN
-F 2 "" H 2000 5150 50  0001 C CNN
-F 3 "" H 2000 5150 50  0001 C CNN
-	1    2000 5150
-	1    0    0    -1  
-$EndComp
-Connection ~ 1500 5450
-Wire Wire Line
-	1500 5450 1900 5450
-Wire Wire Line
-	2000 5550 2000 5800
-$Comp
-L standard_power:0 #PWR?
-U 1 1 606DD0E0
-P 2000 6150
-F 0 "#PWR?" H 2200 6150 50  0001 C CNN
-F 1 "0" H 2000 6050 25  0001 C CNN
-F 2 "" H 2000 6150 50  0001 C CNN
-F 3 "" H 2000 6150 50  0001 C CNN
-	1    2000 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Standard:R R?
-U 1 1 606DD9A9
-P 2000 5900
-AR Path="/5FA653F4/606DD9A9" Ref="R?"  Part="1" 
-AR Path="/606DD9A9" Ref="R?"  Part="1" 
-F 0 "R?" V 2046 5842 50  0000 R CNN
-F 1 "200" V 1955 5842 50  0000 R CNN
-F 2 "EIA Standart:R_0805" H 1990 5900 50  0001 C CNN
-F 3 "" H 1990 5900 50  0001 C CNN
-F 4 "in Stock" H 2000 5900 50  0001 C CNN "Bestellnummer"
-	1    2000 5900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2000 6000 2000 6150
 $EndSCHEMATC

@@ -40,15 +40,13 @@ P 4700 2850
 AR Path="/5FA653F4/5FA3882E" Ref="R?"  Part="1" 
 AR Path="/5FA3882E" Ref="R5"  Part="1" 
 F 0 "R5" V 4654 2908 50  0000 L CNN
-F 1 "10k" V 4745 2908 50  0000 L CNN
+F 1 "5k" V 4745 2908 50  0000 L CNN
 F 2 "EIA Standart:R_0805" H 4690 2850 50  0001 C CNN
 F 3 "" H 4690 2850 50  0001 C CNN
 F 4 "in Stock" H 4700 2850 50  0001 C CNN "Bestellnummer"
 	1    4700 2850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4350 2250 4450 2250
 Wire Wire Line
 	4350 1400 4350 1450
 Wire Wire Line
@@ -68,20 +66,6 @@ Wire Wire Line
 Connection ~ 5000 1950
 Wire Wire Line
 	5000 1450 5000 1400
-$Comp
-L Standard:R R?
-U 1 1 5FA3886C
-P 4550 2250
-AR Path="/5FA653F4/5FA3886C" Ref="R?"  Part="1" 
-AR Path="/5FA3886C" Ref="R4"  Part="1" 
-F 0 "R4" H 4550 2445 50  0000 C CNN
-F 1 "3k" H 4550 2354 50  0000 C CNN
-F 2 "EIA Standart:R_0805" H 4540 2250 50  0001 C CNN
-F 3 "" H 4540 2250 50  0001 C CNN
-F 4 "in Stock" H 4550 2250 50  0001 C CNN "Bestellnummer"
-	1    4550 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 1950 5000 1950
 Wire Wire Line
@@ -103,8 +87,6 @@ F 4 "in Stock" H 4800 2250 50  0001 C CNN "Bestellnummer"
 	1    4800 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 2250 4750 2250
 Wire Wire Line
 	4850 2250 5000 2250
 Wire Wire Line
@@ -159,7 +141,7 @@ F 1 "Diode_Zener" H 3600 3400 50  0001 C CNN
 F 2 "EIA Standart:D_0603" H 3600 3300 50  0001 C CNN
 F 3 "" H 3600 2850 50  0001 C CNN
 F 4 "D" H 3600 3050 50  0001 C CNN "Spice_Primitive"
-F 5 "Z_x" V 3645 2929 50  0000 L CNN "Spice_Model"
+F 5 "d_z" V 3645 2929 50  0000 L CNN "Spice_Model"
 F 6 "Y" H 3600 3150 50  0001 C CNN "Spice_Netlist_Enabled"
 F 7 "./../Spicelib/standard.lib" H 3600 3600 50  0001 C CNN "Spice_Lib_File"
 F 8 "641-1036-1-ND" H 3600 2850 50  0001 C CNN "Bestellnummer"
@@ -187,7 +169,7 @@ P 5600 1800
 AR Path="/5FA653F4/5FA388C1" Ref="R?"  Part="1" 
 AR Path="/5FA388C1" Ref="R6"  Part="1" 
 F 0 "R6" V 5646 1742 50  0000 R CNN
-F 1 "7.5k" V 5555 1742 50  0000 R CNN
+F 1 "6.2k" V 5555 1742 50  0000 R CNN
 F 2 "EIA Standart:R_0805" H 5590 1800 50  0001 C CNN
 F 3 "" H 5590 1800 50  0001 C CNN
 F 4 "in Stock" H 5600 1800 50  0001 C CNN "Bestellnummer"
@@ -201,7 +183,7 @@ P 5600 2850
 AR Path="/5FA653F4/5FA388C7" Ref="R?"  Part="1" 
 AR Path="/5FA388C7" Ref="R7"  Part="1" 
 F 0 "R7" V 5646 2792 50  0000 R CNN
-F 1 "15k" V 5555 2792 50  0000 R CNN
+F 1 "28k" V 5555 2792 50  0000 R CNN
 F 2 "EIA Standart:R_0805" H 5590 2850 50  0001 C CNN
 F 3 "" H 5590 2850 50  0001 C CNN
 F 4 "in Stock" H 5600 2850 50  0001 C CNN "Bestellnummer"
@@ -242,7 +224,7 @@ P 6200 1800
 AR Path="/5FA653F4/5FA388E4" Ref="R?"  Part="1" 
 AR Path="/5FA388E4" Ref="R8"  Part="1" 
 F 0 "R8" V 6246 1742 50  0000 R CNN
-F 1 "200" V 6155 1742 50  0000 R CNN
+F 1 "405" V 6155 1742 50  0000 R CNN
 F 2 "EIA Standart:R_0805" H 6190 1800 50  0001 C CNN
 F 3 "" H 6190 1800 50  0001 C CNN
 F 4 "in Stock" H 6200 1800 50  0001 C CNN "Bestellnummer"
@@ -446,7 +428,7 @@ L Symbols:Voltage V1
 U 1 1 6064BCA5
 P 2400 1550
 F 0 "V1" H 2250 1600 50  0000 R CNN
-F 1 "pulse 17 18 5u ac 1" H 2250 1500 50  0000 R CNN
+F 1 "pulse 18 18 5u ac 1" H 2250 1500 50  0000 R CNN
 F 2 "" V 2400 1550 50  0001 C CNN
 F 3 "" V 2400 1550 50  0001 C CNN
 	1    2400 1550
@@ -525,11 +507,11 @@ F 8 "1727-2956-1-ND" H 5000 2500 50  0001 C CNN "Bestellnummer"
 	-1   0    0    -1  
 $EndComp
 Text Notes 2000 3750 0    50   ~ 0
-;tran 1u 150m
+.tran 1n 5m
 Text Notes 2000 4100 0    50   ~ 0
-.model d_z d bv=10
+.model d_z d bv=12.3
 Text Notes 2000 3850 0    50   ~ 0
-.ac dec 1000 1 10Meg
+;ac dec 1000 1 10Meg
 Wire Wire Line
 	2400 1750 2400 1650
 Wire Wire Line
@@ -596,7 +578,7 @@ P 3800 2500
 AR Path="/5FA653F4/60744B2C" Ref="R?"  Part="1" 
 AR Path="/60744B2C" Ref="R3"  Part="1" 
 F 0 "R3" H 3800 2400 50  0000 C CNN
-F 1 "100" H 3800 2600 50  0000 C CNN
+F 1 "0" H 3800 2600 50  0000 C CNN
 F 2 "EIA Standart:R_0805" H 3790 2500 50  0001 C CNN
 F 3 "" H 3790 2500 50  0001 C CNN
 F 4 "in Stock" H 3800 2500 50  0001 C CNN "Bestellnummer"
@@ -607,4 +589,26 @@ Wire Wire Line
 	3700 2500 3600 2500
 Text Notes 3000 4100 0    50   ~ 0
 Änderungen\nR3 - 100 ohm\nR5 - 10k\nR7 - 15k  - wegen 10V Zener\nR6 - 7.5k - wegen 10V Zener 
+Text Notes 2000 3950 0    50   ~ 0
+;dc V1 17 17 0.1
+Text Label 4050 2500 0    50   ~ 0
+IN+
+Wire Wire Line
+	4650 2250 4750 2250
+Wire Wire Line
+	4350 2250 4450 2250
+$Comp
+L Standard:R R?
+U 1 1 5FA3886C
+P 4550 2250
+AR Path="/5FA653F4/5FA3886C" Ref="R?"  Part="1" 
+AR Path="/5FA3886C" Ref="R4"  Part="1" 
+F 0 "R4" H 4550 2445 50  0000 C CNN
+F 1 "3k" H 4550 2354 50  0000 C CNN
+F 2 "EIA Standart:R_0805" H 4540 2250 50  0001 C CNN
+F 3 "" H 4540 2250 50  0001 C CNN
+F 4 "in Stock" H 4550 2250 50  0001 C CNN "Bestellnummer"
+	1    4550 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

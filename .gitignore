@@ -12,3 +12,7 @@ Ausarbeitung/els-ausarbeitung.log
 Ausarbeitung/els-ausarbeitung.out
 Ausarbeitung/els-ausarbeitung.toc
 .gitignore
+Ausarbeitung/src/messungen/F1--ausgang.csv
+Ausarbeitung/src/messungen/F1--eingang.csv
+Ausarbeitung/src/messungen/F1--nullmessung.csv
+common/Simulation/_autosave-reg.sch

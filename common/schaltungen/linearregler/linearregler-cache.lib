@@ -1,0 +1,116 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Standard_Diode_Zener
+#
+DEF Standard_Diode_Zener D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Standard_Diode_Zener" 0 550 50 H I C CNN
+F2 "Diode_THT:D_DO-201_P15.24mm_Horizontal" 0 450 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 0 200 50 H I C CNN "Spice_Primitive"
+F5 "Zener" 0 200 50 H V C CNN "Spice_Model"
+F6 "Y" 0 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 0 750 50 H I C CNN "Spice_Lib_File"
+$FPLIST
+ D*DO?201*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 8 -50 -50 -50 50 -30 50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+X A 1 100 0 50 L 50 50 1 1 P
+X K 2 -100 0 50 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Standard_NMOS
+#
+DEF Standard_NMOS Q 0 40 N N 1 F N
+F0 "Q" 50 -50 50 H V C CNN
+F1 "Standard_NMOS" 150 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "X" 300 350 50 H I C CNN "Spice_Primitive"
+F5 "nmos" 50 400 50 H I C CNN "Spice_Model"
+F6 "Y" -250 400 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\standart.lib" 200 550 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 -30 -50 -30 -30 N
+P 2 0 1 0 -30 -10 -30 10 N
+P 2 0 1 0 -30 30 -30 50 N
+P 2 0 1 0 0 -40 0 -50 N
+P 3 0 1 0 -30 40 0 40 0 50 N
+P 4 0 1 0 -30 0 -20 10 -20 -10 -30 0 N
+P 4 0 1 0 -30 0 0 0 0 -40 -30 -40 N
+X D 1 0 100 50 D 25 25 1 1 P
+X G 2 -100 -50 50 R 25 25 1 1 I
+X S 3 0 -100 50 U 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Standard_R
+#
+DEF Standard_R R 0 40 N N 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "Standard_R" 0 -100 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+DRAW
+P 5 0 1 0 -60 30 -60 -30 60 -30 60 30 -60 30 N
+X 1 1 -100 0 39 R 50 50 1 1 P
+X 2 2 100 0 39 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Symbols_OPA_S2
+#
+DEF Symbols_OPA_S2 U 0 40 Y Y 1 F N
+F0 "U" 250 100 50 H V C CNN
+F1 "Symbols_OPA_S2" 250 -100 50 H V C CNN
+F2 "" -150 0 50 H I C CNN
+F3 "" -150 0 50 H I C CNN
+F4 "X" -50 1100 50 H I C CNN "Spice_Primitive"
+F5 "uopamp_lvl1" 300 1150 50 H I C CNN "Spice_Model"
+F6 "Y" 550 1200 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "/home/vhsuser/Private/KiCAD_Libs/Spice Models/uni_opa.lib" 450 800 50 H I C CNN "Spice_Lib_File"
+DRAW
+P 4 1 1 0 -200 200 -200 -200 200 0 -200 200 f
+X + 1 -250 100 50 R 25 25 1 1 I
+X - 2 -250 -100 50 R 25 25 1 1 I
+X OUT 3 250 0 50 L 25 25 1 1 O
+ENDDRAW
+ENDDEF
+#
+# standard_power_0
+#
+DEF standard_power_0 #PWR 0 0 N N 1 F P
+F0 "#PWR" 200 0 50 H I C CNN
+F1 "standard_power_0" 0 -100 25 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -60 30 0 0 0 0 Normal 0 C C
+P 2 0 1 15 -50 -25 50 -25 N
+P 2 0 1 0 0 0 0 -25 N
+X 0 ~ 0 0 25 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# standard_power_VCC
+#
+DEF standard_power_VCC #PWR 0 0 N N 1 F P
+F0 "#PWR" 100 0 50 H I C CNN
+F1 "standard_power_VCC" 0 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 0 -30 -60 N
+P 2 0 1 0 0 0 0 -100 N
+P 2 0 1 0 0 0 30 -60 N
+X VCC 1 0 -100 100 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

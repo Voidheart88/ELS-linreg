@@ -4,3 +4,11 @@ Ausarbeitung/els-ausarbeitung.pdf
 Vortrag/els-vortrag.pdf
 common/Simulation/stellglied.sch-bak
 common/Simulation/reg.sch-bak
+*.aux
+*.bbl
+*.lof
+*.blg
+*.out
+*.log
+*.toc
+common/schaltungen/linearregler/linearregler.sch-bak

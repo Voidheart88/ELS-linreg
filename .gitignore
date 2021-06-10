@@ -4,6 +4,10 @@ Ausarbeitung/els-ausarbeitung.pdf
 Vortrag/els-vortrag.pdf
 common/Simulation/stellglied.sch-bak
 common/Simulation/reg.sch-bak
+Ausarbeitung/src/messungen/F1--ausgang.csv
+Ausarbeitung/src/messungen/F1--eingang.csv
+Ausarbeitung/src/messungen/F1--nullmessung.csv
+common/Simulation/_autosave-reg.sch
 *.aux
 *.bbl
 *.lof

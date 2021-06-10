@@ -428,7 +428,7 @@ L Symbols:Voltage V1
 U 1 1 6064BCA5
 P 2400 1550
 F 0 "V1" H 2250 1600 50  0000 R CNN
-F 1 "pulse 18 18 5u ac 1" H 2250 1500 50  0000 R CNN
+F 1 "pulse 10 25 0 9m" H 2250 1500 50  0000 R CNN
 F 2 "" V 2400 1550 50  0001 C CNN
 F 3 "" V 2400 1550 50  0001 C CNN
 	1    2400 1550
@@ -507,9 +507,9 @@ F 8 "1727-2956-1-ND" H 5000 2500 50  0001 C CNN "Bestellnummer"
 	-1   0    0    -1  
 $EndComp
 Text Notes 2000 3750 0    50   ~ 0
-.tran 1n 5m
+.tran 100n 10000u
 Text Notes 2000 4100 0    50   ~ 0
-.model d_z d bv=12.3
+.model d_z d bv=10
 Text Notes 2000 3850 0    50   ~ 0
 ;ac dec 1000 1 10Meg
 Wire Wire Line
@@ -578,7 +578,7 @@ P 3800 2500
 AR Path="/5FA653F4/60744B2C" Ref="R?"  Part="1" 
 AR Path="/60744B2C" Ref="R3"  Part="1" 
 F 0 "R3" H 3800 2400 50  0000 C CNN
-F 1 "0" H 3800 2600 50  0000 C CNN
+F 1 "1" H 3800 2600 50  0000 C CNN
 F 2 "EIA Standart:R_0805" H 3790 2500 50  0001 C CNN
 F 3 "" H 3790 2500 50  0001 C CNN
 F 4 "in Stock" H 3800 2500 50  0001 C CNN "Bestellnummer"

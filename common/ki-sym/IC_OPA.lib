@@ -1,0 +1,173 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# AD8055
+#
+DEF AD8055 U 0 40 Y Y 2 L N
+F0 "U" 250 200 50 H V C CNN
+F1 "AD8055" 250 -150 50 H V C CNN
+F2 "Package_SMD:SO-8" 1250 -50 50 H I C CNN
+F3 "" 1050 600 50 H I C CNN
+F4 "X" 1200 -200 50 H I C CNN "Spice_Primitive"
+F5 "AD8055an" 1200 150 50 H I C CNN "Spice_Model"
+F6 "Y" 1300 -200 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Private\\KiCAD_Libs\\Spice Models\\OPA\\AD8055.cir" 1250 -450 50 H I C CNN "Spice_Lib_File"
+F8 "3,2,7,4,6" 1200 50 50 H I C CNN "Spice_Node_Sequence"
+F9 "AD8055ARZ-ND" 1200 250 50 H I C CNN "Bestellnummer"
+DRAW
+S -100 150 100 -150 1 1 0 f
+P 4 2 1 0 -200 200 -200 -200 200 0 -200 200 f
+X V- 4 0 -200 50 U 25 26 1 1 W
+X V+ 7 0 200 50 D 25 26 1 1 W
+X -IN 2 -250 100 50 R 25 26 2 1 I
+X +IN 3 -250 -100 50 R 25 26 2 1 I
+X OUT 6 250 0 50 L 25 13 2 1 O
+ENDDRAW
+ENDDEF
+#
+# AD8061
+#
+DEF AD8061 U 0 40 Y Y 2 L N
+F0 "U" 400 250 50 H V C CNN
+F1 "AD8061" 450 -300 50 H V C CNN
+F2 "Package_SMD:SO-8" 750 400 50 H I C CNN
+F3 "" -150 0 50 H I C CNN
+F4 "X" 300 50 50 H I C CNN "Spice_Primitive"
+F5 "AD8061" 550 150 50 H I C CNN "Spice_Model"
+F6 "Y" 300 150 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "C:\\Private\\KiCAD_Libs\\Spice Models\\OPA\\AD8061.cir" 1100 300 50 H I C CNN "Spice_Lib_File"
+F8 "3,2,7,4,6" 950 150 50 H I C CNN "Spice_Node_Sequence"
+F9 "AD8061ARZ-ND" 700 750 50 H I C CNN "Bestellnummer"
+DRAW
+S -100 150 100 -150 1 1 0 f
+P 4 2 1 0 -200 200 -200 -200 200 0 -200 200 f
+X V- 4 0 -200 50 U 25 26 1 1 W
+X V+ 7 0 200 50 D 25 26 1 1 W
+X -IN 2 -250 100 50 R 25 26 2 1 I
+X +IN 3 -250 -100 50 R 25 26 2 1 I
+X OUT 6 250 0 50 L 25 13 2 1 O
+ENDDRAW
+ENDDEF
+#
+# AD8627
+#
+DEF AD8627 U 0 40 Y Y 2 L N
+F0 "U" 250 200 50 H V C CNN
+F1 "AD8627" 250 -200 50 H V C CNN
+F2 "Package_SMD:SO-8" 1400 300 50 H I C CNN
+F3 "" 1050 500 50 H I C CNN
+F4 "X" 950 300 50 H I C CNN "Spice_Primitive"
+F5 "AD8627" 850 400 50 H I C CNN "Spice_Model"
+F6 "Y" 850 300 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\OPA\\AD8627.lib" 1200 600 50 H I C CNN "Spice_Lib_File"
+F8 "3,2,7,4,6" 1200 400 50 H I C CNN "Spice_Node_Sequence"
+F9 "AD8627ARZ-ND" 700 750 50 H V C CNN "Bestellnummer"
+DRAW
+S -100 150 100 -150 1 1 0 f
+P 4 2 1 0 -200 200 -200 -200 200 0 -200 200 f
+X V- 4 0 -200 50 U 25 26 1 1 W
+X V+ 7 0 200 50 D 25 26 1 1 W
+X -IN 2 -250 100 50 R 25 26 2 1 I
+X +IN 3 -250 -100 50 R 25 26 2 1 I
+X OUT 6 250 0 50 L 25 13 2 1 O
+ENDDRAW
+ENDDEF
+#
+# ADA4895-1
+#
+DEF ADA4895-1 U 0 40 Y Y 2 L N
+F0 "U" 150 150 50 H V C CNN
+F1 "ADA4895-1" 350 -150 50 H V C CNN
+F2 "" -150 -100 50 H I C CNN
+F3 "" 200 950 50 H I C CNN
+F4 "X" 800 550 50 H I C CNN "Spice_Primitive"
+F5 "ADA4895" 900 1100 50 H I C CNN "Spice_Model"
+F6 "Y" 800 650 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\OPA\\ADA4895.lib" 700 850 50 H I C CNN "Spice_Lib_File"
+F8 "3,2,7,4,6,8" 1300 1100 50 H I C CNN "Spice_Node_Sequence"
+F9 "ADA4895-1ARZ-ND" 750 750 50 H I C CNN "Bestellnummer"
+DRAW
+S -100 150 100 -150 1 1 0 f
+P 4 2 1 0 -200 200 -200 -200 200 0 -200 200 f
+X V- 4 0 -200 50 U 25 26 1 1 W
+X V+ 7 0 200 50 D 25 26 1 1 W
+X ~DIS 8 -150 0 50 R 26 13 1 1 I
+X -IN 2 -250 100 50 R 25 26 2 1 I
+X +IN 3 -250 -100 50 R 25 26 2 1 I
+X OUT 6 250 0 50 L 25 13 2 1 O
+ENDDRAW
+ENDDEF
+#
+# MAX410
+#
+DEF MAX410 U 0 40 Y Y 2 L N
+F0 "U" 250 150 50 H V C CNN
+F1 "MAX410" 250 -150 50 H V C CNN
+F2 "Package_SMD:SO-8" 700 650 50 H I C CNN
+F3 "" -150 900 50 H I C CNN
+F4 "X" 1200 850 50 H I C CNN "Spice_Primitive"
+F5 "MAX410" 550 1050 50 H I C CNN "Spice_Model"
+F6 "Y" 1200 950 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\OPA\\MAX410.lib" 1100 1200 50 H I C CNN "Spice_Lib_File"
+F8 "3,2,7,4,6" 950 1050 50 H I C CNN "Spice_Node_Sequence"
+F9 "MAX4012ESA+TCT-ND" 700 750 50 H I C CNN "Bestellnummer"
+DRAW
+S -100 150 100 -150 1 1 0 f
+P 4 2 1 0 -200 200 -200 -200 200 0 -200 200 f
+X V- 4 0 -200 50 U 25 26 1 1 W
+X V+ 7 0 200 50 D 25 26 1 1 W
+X -IN 2 -250 100 50 R 25 26 2 1 I
+X +IN 3 -250 -100 50 R 25 26 2 1 I
+X OUT 6 250 0 50 L 25 13 2 1 O
+ENDDRAW
+ENDDEF
+#
+# MAX44241
+#
+DEF MAX44241 U 0 40 Y Y 2 L N
+F0 "U" 300 150 50 H V C CNN
+F1 "MAX44241" 300 -150 50 H V C CNN
+F2 "" -150 0 50 H I C CNN
+F3 "" 600 450 50 H I C CNN
+F4 "X" 850 350 50 H I C CNN "Spice_Primitive"
+F5 "MAX44241" 550 650 50 H I C CNN "Spice_Model"
+F6 "Y" 850 450 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\OPA\\MAX44241.lib" 650 550 50 H I C CNN "Spice_Lib_File"
+F8 "7,4,3,2,6" 1000 650 50 H I C CNN "Spice_Node_Sequence"
+F9 "MAX44241AUA+TCT-ND" 800 750 50 H I C CNN "Bestellnummer"
+DRAW
+S -100 150 100 -150 1 1 0 f
+P 4 2 1 0 -200 200 -200 -200 200 0 -200 200 f
+X V- 4 0 -200 50 U 25 26 1 1 W
+X V+ 7 0 200 50 D 25 26 1 1 W
+X -IN 2 -250 100 50 R 25 26 2 1 I
+X +IN 3 -250 -100 50 R 25 26 2 1 I
+X OUT 6 250 0 50 L 25 13 2 1 O
+ENDDRAW
+ENDDEF
+#
+# MAX44250
+#
+DEF MAX44250 U 0 40 Y Y 2 L N
+F0 "U" 300 150 50 H V C CNN
+F1 "MAX44250" 300 -150 50 H V C CNN
+F2 "Package_SMD:SO-8" 750 450 50 H I C CNN
+F3 "" -150 0 50 H I C CNN
+F4 "X" 450 900 50 H I C CNN "Spice_Primitive"
+F5 "MAX44250" 700 1000 50 H I C CNN "Spice_Model"
+F6 "Y" 450 1000 50 H I C CNN "Spice_Netlist_Enabled"
+F7 "D:\\Bibliotheken\\Workbench\\Private\\KiCAD_Libs\\Spice Models\\OPA\\max44250.lib" 750 550 50 H I C CNN "Spice_Lib_File"
+F8 "6,7,3,2,4" 700 900 50 H I C CNN "Spice_Node_Sequence"
+F9 "MAX44250AUA+-ND" 700 750 50 H I C CNN "Bestellnummer"
+DRAW
+S -100 150 100 -150 1 1 0 f
+P 4 2 1 0 -200 200 -200 -200 200 0 -200 200 f
+X V- 4 0 -200 50 U 25 26 1 1 W
+X V+ 7 0 200 50 D 25 26 1 1 W
+X -IN 2 -250 100 50 R 25 26 2 1 I
+X +IN 3 -250 -100 50 R 25 26 2 1 I
+X OUT 6 250 0 50 L 25 13 2 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

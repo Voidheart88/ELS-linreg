@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name IC_OPA)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/IC_OPA.lib)(options "")(descr ""))
+  (lib (name T_BJT)(type Legacy)(uri C:/Studium/Master/ELS/Semesterarbeit/common/ki-sym/T_BJT.lib)(options "")(descr ""))
+)

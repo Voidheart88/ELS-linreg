@@ -116,6 +116,8 @@ Die Abb.~\ref{FIG:OSZ} zeigt die Oszillatorschaltung.
 \end{figure}
 
 Die Last ist konstant und muss ihrerseits keine weitere Last treiben.
+Diese Arbeit konzentriert sich weiterhin nur auf die Entwicklung eines 
+Positivspannungsreglers.
 
 \section{Rauschen}
 Unter dem Begriff Rauschen versteht man die nicht systematische veränderungen
@@ -169,18 +171,36 @@ Anschlüssen eines Widerstands von einem \si{\kilo\ohm} also:
 
 \textbf{Schrotrauschen}
 
+\begin{figure}
+  \centering
+  \includegraphics[clip, width=0.49\textwidth]
+  {./../common/bilder/schrotrauschen.pdf}
+  \caption{Rauschen an einem Widerstand}\label{FIG:SHOTNOISE}
+\end{figure}
 Muss ein elektrischer Strom eine Potentialbarriere (z. B. verursacht 
 durch einen PN Übergang) überwinden, so tun dies die Ladungsträger an der 
-Barriere nicht zur selben Zeit. Die Ladungsträger passieren die Barriere
-auf unterschiedlichen Pfaden, wodurch die Menge der Ladungsträger im Bereich 
-der Barriere schwankt.
+Barriere nicht zur selben Zeit. Die Abb.:~\ref{FIG:SHOTNOISE} zeigt dies
+am Beispiel eines PN-Übergangs.
+Die Ladungsträger passieren die Barriere auf unterschiedlichen Pfaden, 
+wodurch die Rate mit der diese die Barriere passieren schwankt.
+Dies führt zu einer Schwankung des Stroms, welches makroskopisch messbar ist.
 Schrotrauschen erfordert das Fließen eines elektrischen Stroms und lässt sich 
-mit folgender Gleichung angeben:
+mit folgender Gleichung angeben\cite[S. 541]{Art:SCHOTTKY}:
 \[I_{\rm eff} = \sqrt{2\,I\,e\,\Delta f }\]
-Die Spektrale Zusammensetzung des Signals ist wie beim thermischen Rauschen
+Die spektrale Zusammensetzung des Signals ist wie beim thermischen Rauschen
 über den betrachteten Frequenzbereich gleichverteilt.
-Auch hier spricht man also von weißem Rauschen.  
+Auch hier spricht man also wieder von weißem Rauschen. 
 
+\textbf{1/f-Rauschen}
 
+Kommt es zu einer Schwankung der Anzahl der freien Leitungsträger
+in einem Leiter tritt sogenanntes 1/f-Rauschen auf.
+Auslöser hierfür können unter Anderem lokale Leitwertänderungen an den 
+Korngrenzen von Kohleschichtwiderständen, aufgrund von Temperaturschwankungen, 
+sein. Weiterhin kommt es bei den Generations und Rekombinationsprozessen in
+Halbleitern, bei denen Ladungsträger aus dem Valenz- in das Leitungsband 
+gehoben werden und später wieder rekombinieren, zu einem 
+1/f-Rauschen.\cite[S.29]{BK:SENSORNOISE}
 
-
+Die Amplitude des 1/f-Rauschens ist bei niedrigen Frequenzen am größten und
+nimmt mit zunehmender Frequenz immer weiter ab.

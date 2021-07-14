@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name linearregler-rescue)(type Legacy)(uri ${KIPRJMOD}/linearregler-rescue.lib)(options "")(descr ""))
+)

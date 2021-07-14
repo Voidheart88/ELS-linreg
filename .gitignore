@@ -16,3 +16,5 @@ common/Simulation/_autosave-reg.sch
 *.log
 *.toc
 common/schaltungen/linearregler/linearregler.sch-bak
+Vortrag/els-vortrag.nav
+Vortrag/els-vortrag.snm

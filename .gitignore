@@ -18,3 +18,5 @@ common/Simulation/_autosave-reg.sch
 common/schaltungen/linearregler/linearregler.sch-bak
 Vortrag/els-vortrag.nav
 Vortrag/els-vortrag.snm
+common/schaltungen/linearregler/linearregler-rescue.dcm
+common/schaltungen/linearregler/linearregler-rescue.lib

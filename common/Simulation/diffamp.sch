@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L T_BJT:2N2222 T?
+U 1 1 5FA38821
+P 4350 2500
+AR Path="/5FA653F4/5FA38821" Ref="T?"  Part="1" 
+AR Path="/5FA38821" Ref="T4"  Part="1" 
+F 0 "T4" H 4250 2600 50  0000 C CNN
+F 1 "PMBT2222" H 4150 2400 50  0000 C CNN
+F 2 "EIA Standart:SOT-23" H 4350 2500 50  0001 C CNN
+F 3 "${KIPRV_DATASHEET}/2N2222.pdf" H 4350 2500 50  0001 C CNN
+F 4 "Q" H 4350 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "2N2222A" H 4350 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4350 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "./../Spicelib/BJT.lib" H 4350 2800 50  0001 C CNN "Spice_Lib_File"
+F 8 "1727-2956-1-ND" H 4350 2500 50  0001 C CNN "Bestellnummer"
+	1    4350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2700 4700 2750
+$Comp
+L Standard:R R?
+U 1 1 5FA3882E
+P 4700 2850
+AR Path="/5FA653F4/5FA3882E" Ref="R?"  Part="1" 
+AR Path="/5FA3882E" Ref="R5"  Part="1" 
+F 0 "R5" V 4654 2908 50  0000 L CNN
+F 1 "5k" V 4745 2908 50  0000 L CNN
+F 2 "EIA Standart:R_0805" H 4690 2850 50  0001 C CNN
+F 3 "" H 4690 2850 50  0001 C CNN
+F 4 "in Stock" H 4700 2850 50  0001 C CNN "Bestellnummer"
+	1    4700 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1400 4350 1450
+Wire Wire Line
+	4350 1650 4350 1750
+Wire Wire Line
+	4450 1550 4650 1550
+Wire Wire Line
+	4650 1550 4650 1750
+Connection ~ 4650 1550
+Wire Wire Line
+	4350 1750 4650 1750
+Connection ~ 4350 1750
+Wire Wire Line
+	4350 1750 4350 1850
+Wire Wire Line
+	5000 1950 5000 1650
+Connection ~ 5000 1950
+Wire Wire Line
+	5000 1450 5000 1400
+Wire Wire Line
+	4450 1950 5000 1950
+Wire Wire Line
+	4650 1550 4900 1550
+Wire Wire Line
+	4350 1400 4650 1400
+$Comp
+L Standard:C C?
+U 1 1 5FA38876
+P 4800 2250
+AR Path="/5FA653F4/5FA38876" Ref="C?"  Part="1" 
+AR Path="/5FA38876" Ref="C2"  Part="1" 
+F 0 "C2" H 4800 2465 50  0000 C CNN
+F 1 "100p" H 4800 2374 50  0000 C CNN
+F 2 "EIA Standart:C_0805" H 4790 2250 50  0001 C CNN
+F 3 "in Stock" H 4790 2250 50  0001 C CNN
+F 4 "in Stock" H 4800 2250 50  0001 C CNN "Bestellnummer"
+	1    4800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2250 5000 2250
+Wire Wire Line
+	4350 2050 4350 2250
+Wire Wire Line
+	4350 2600 4350 2700
+Wire Wire Line
+	4350 2700 4700 2700
+Wire Wire Line
+	4700 2700 5000 2700
+Connection ~ 4700 2700
+Wire Wire Line
+	5000 2600 5000 2700
+Connection ~ 4350 2250
+Connection ~ 5000 2250
+Wire Wire Line
+	5000 2250 5000 2400
+Wire Wire Line
+	5000 1950 5000 2250
+Wire Wire Line
+	4700 2950 4700 3150
+$Comp
+L T_BJT:2N2907 T?
+U 1 1 6064E5EC
+P 4350 1550
+AR Path="/5FA653F4/6064E5EC" Ref="T?"  Part="1" 
+AR Path="/6064E5EC" Ref="T2"  Part="1" 
+F 0 "T2" H 4400 1500 50  0000 L CNN
+F 1 "PMBT2907" H 4400 1600 50  0000 L CNN
+F 2 "EIA Standart:SOT-23" H 4350 1550 50  0001 C CNN
+F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 4350 1550 50  0001 C CNN
+F 4 "Q" H 4350 1850 50  0001 C CNN "Spice_Primitive"
+F 5 "2N2907" H 4350 1850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4350 1850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "./../Spicelib/BJT.lib" H 4350 1850 50  0001 C CNN "Spice_Lib_File"
+F 8 "1727-1884-1-ND" H 4350 1550 50  0001 C CNN "Bestellnummer"
+	1    4350 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L T_BJT:2N2907 T?
+U 1 1 6064FFAD
+P 5000 1550
+AR Path="/5FA653F4/6064FFAD" Ref="T?"  Part="1" 
+AR Path="/6064FFAD" Ref="T5"  Part="1" 
+F 0 "T5" H 5050 1500 50  0000 L CNN
+F 1 "PMBT2907" H 5050 1600 50  0000 L CNN
+F 2 "EIA Standart:SOT-23" H 5000 1550 50  0001 C CNN
+F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 5000 1550 50  0001 C CNN
+F 4 "Q" H 5000 1850 50  0001 C CNN "Spice_Primitive"
+F 5 "2N2907" H 5000 1850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5000 1850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "./../Spicelib/BJT.lib" H 5000 1850 50  0001 C CNN "Spice_Lib_File"
+F 8 "1727-1884-1-ND" H 5000 1550 50  0001 C CNN "Bestellnummer"
+	1    5000 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L T_BJT:2N2907 T?
+U 1 1 60654640
+P 4350 1950
+AR Path="/5FA653F4/60654640" Ref="T?"  Part="1" 
+AR Path="/60654640" Ref="T3"  Part="1" 
+F 0 "T3" H 4400 1900 50  0000 L CNN
+F 1 "PMBT2907" H 4400 2000 50  0000 L CNN
+F 2 "EIA Standart:SOT-23" H 4350 1950 50  0001 C CNN
+F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 4350 1950 50  0001 C CNN
+F 4 "Q" H 4350 2250 50  0001 C CNN "Spice_Primitive"
+F 5 "2N2907" H 4350 2250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4350 2250 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "./../Spicelib/BJT.lib" H 4350 2250 50  0001 C CNN "Spice_Lib_File"
+F 8 "1727-1884-1-ND" H 4350 1950 50  0001 C CNN "Bestellnummer"
+	1    4350 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L T_BJT:2N2222 T?
+U 1 1 60658540
+P 5000 2500
+AR Path="/5FA653F4/60658540" Ref="T?"  Part="1" 
+AR Path="/60658540" Ref="T6"  Part="1" 
+F 0 "T6" H 4900 2600 50  0000 C CNN
+F 1 "PMBT2222" H 4800 2400 50  0000 C CNN
+F 2 "EIA Standart:SOT-23" H 5000 2500 50  0001 C CNN
+F 3 "${KIPRV_DATASHEET}/2N2222.pdf" H 5000 2500 50  0001 C CNN
+F 4 "Q" H 5000 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "2N2222A" H 5000 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5000 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "./../Spicelib/BJT.lib" H 5000 2800 50  0001 C CNN "Spice_Lib_File"
+F 8 "1727-2956-1-ND" H 5000 2500 50  0001 C CNN "Bestellnummer"
+	1    5000 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2250 4350 2400
+Text Label 4050 2500 2    50   ~ 0
+IN+
+Wire Wire Line
+	4650 2250 4750 2250
+Wire Wire Line
+	4350 2250 4450 2250
+$Comp
+L Standard:R R?
+U 1 1 5FA3886C
+P 4550 2250
+AR Path="/5FA653F4/5FA3886C" Ref="R?"  Part="1" 
+AR Path="/5FA3886C" Ref="R4"  Part="1" 
+F 0 "R4" H 4550 2445 50  0000 C CNN
+F 1 "3k" H 4550 2354 50  0000 C CNN
+F 2 "EIA Standart:R_0805" H 4540 2250 50  0001 C CNN
+F 3 "" H 4540 2250 50  0001 C CNN
+F 4 "in Stock" H 4550 2250 50  0001 C CNN "Bestellnummer"
+	1    4550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L standard_power:0 #PWR?
+U 1 1 60F5D4E4
+P 4700 3150
+F 0 "#PWR?" H 4900 3150 50  0001 C CNN
+F 1 "0" H 4700 3050 25  0001 C CNN
+F 2 "" H 4700 3150 50  0001 C CNN
+F 3 "" H 4700 3150 50  0001 C CNN
+	1    4700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L standard_power:VCC #PWR?
+U 1 1 60F5DCCD
+P 4650 1150
+F 0 "#PWR?" H 4750 1150 50  0001 C CNN
+F 1 "VCC" H 4650 1225 50  0000 C CNN
+F 2 "" H 4650 1150 50  0001 C CNN
+F 3 "" H 4650 1150 50  0001 C CNN
+	1    4650 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1250 4650 1400
+Connection ~ 4650 1400
+Wire Wire Line
+	4650 1400 5000 1400
+Wire Wire Line
+	4250 2500 4050 2500
+Text Label 5300 2500 0    50   ~ 0
+IN-
+Wire Wire Line
+	5100 2500 5300 2500
+$EndSCHEMATC

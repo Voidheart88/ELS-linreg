@@ -1,0 +1,131 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L T_BJT:2N2907 T?
+U 1 1 5FA38902
+P 3150 1200
+AR Path="/5FA653F4/5FA38902" Ref="T?"  Part="1" 
+AR Path="/5FA38902" Ref="T1"  Part="1" 
+F 0 "T1" V 3331 1200 50  0000 C CNN
+F 1 "PMBT2907" V 3240 1200 50  0000 C CNN
+F 2 "EIA Standart:SOT-23" H 3150 1200 50  0001 C CNN
+F 3 "${KIPRV_DATASHEET}/2N2907.pdf" H 3150 1200 50  0001 C CNN
+F 4 "Q" H 3150 1500 50  0001 C CNN "Spice_Primitive"
+F 5 "2N2907" H 3150 1500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3150 1500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "./../Spicelib/BJT.lib" H 3150 1500 50  0001 C CNN "Spice_Lib_File"
+F 8 "1727-1884-1-ND" H 3150 1200 50  0001 C CNN "Bestellnummer"
+	1    3150 1200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Standard:R R?
+U 1 1 5FA3890B
+P 3150 2050
+AR Path="/5FA653F4/5FA3890B" Ref="R?"  Part="1" 
+AR Path="/5FA3890B" Ref="R1"  Part="1" 
+F 0 "R1" V 3104 2108 50  0000 L CNN
+F 1 "5k" V 3195 2108 50  0000 L CNN
+F 2 "EIA Standart:R_0805" H 3140 2050 50  0001 C CNN
+F 3 "" H 3140 2050 50  0001 C CNN
+F 4 "in Stock" H 3150 2050 50  0001 C CNN "Bestellnummer"
+	1    3150 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1950 3150 1850
+Wire Wire Line
+	3050 1200 2850 1200
+$Comp
+L T_JFET:J2SK152 J?
+U 1 1 5FA3891E
+P 2850 1600
+AR Path="/5FA653F4/5FA3891E" Ref="J?"  Part="1" 
+AR Path="/5FA3891E" Ref="J1"  Part="1" 
+F 0 "J1" H 2894 1646 50  0000 L CNN
+F 1 "MMBF4393" H 2894 1555 50  0000 L CNN
+F 2 "EIA Standart:SOT-23_A" H 2850 1600 50  0001 C CNN
+F 3 "" H 2850 1600 50  0001 C CNN
+F 4 "J" H 2850 1950 50  0001 C CNN "Spice_Primitive"
+F 5 "J2SK152" H 2850 1950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2850 1950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "./../Spicelib/JFET.lib" H 2850 1950 50  0001 C CNN "Spice_Lib_File"
+F 8 "MMBF4393LT3GOSCT-ND" H 2850 1600 50  0001 C CNN "Bestellnummer"
+	1    2850 1600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1700 2850 1850
+Wire Wire Line
+	2850 1850 3150 1850
+Connection ~ 3150 1850
+Wire Wire Line
+	3150 1850 3150 1300
+Connection ~ 2850 1400
+Wire Wire Line
+	2850 1200 2850 1400
+Wire Wire Line
+	3150 2150 3150 2200
+$Comp
+L standard_power:0 #PWR01
+U 1 1 5FFE26B8
+P 3150 2200
+F 0 "#PWR01" H 3350 2200 50  0001 C CNN
+F 1 "0" H 3150 2100 25  0001 C CNN
+F 2 "" H 3150 2200 50  0001 C CNN
+F 3 "" H 3150 2200 50  0001 C CNN
+	1    3150 2200
+	1    0    0    -1  
+$EndComp
+Text Label 3600 1650 0    50   ~ 0
+G-POS
+Text Label 2900 1850 0    50   ~ 0
+S-POS
+Wire Wire Line
+	2850 1400 2700 1400
+Wire Wire Line
+	2700 1400 2700 1300
+$Comp
+L standard_power:VCC #PWR05
+U 1 1 606AB733
+P 2700 1200
+F 0 "#PWR05" H 2800 1200 50  0001 C CNN
+F 1 "VCC" H 2700 1275 50  0000 C CNN
+F 2 "" H 2700 1200 50  0001 C CNN
+F 3 "" H 2700 1200 50  0001 C CNN
+	1    2700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1500 2850 1400
+Wire Wire Line
+	2950 1650 3600 1650
+Wire Wire Line
+	3250 1200 3600 1200
+Wire Wire Line
+	3600 1200 3600 1100
+$Comp
+L standard_power:15V #PWR?
+U 1 1 60F6C7B5
+P 3600 1000
+F 0 "#PWR?" H 3700 1000 50  0001 C CNN
+F 1 "15V" H 3600 1075 50  0000 C CNN
+F 2 "" H 3600 1000 50  0001 C CNN
+F 3 "" H 3600 1000 50  0001 C CNN
+	1    3600 1000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

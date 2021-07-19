@@ -1,4 +1,3 @@
-
 Ausarbeitung/Semesterarbeit.pdf
 Ausarbeitung/els-ausarbeitung.pdf
 Vortrag/els-vortrag.pdf
@@ -20,3 +19,8 @@ Vortrag/els-vortrag.nav
 Vortrag/els-vortrag.snm
 common/schaltungen/linearregler/linearregler-rescue.dcm
 common/schaltungen/linearregler/linearregler-rescue.lib
+common/Simulation/diffamp.sch-bak
+common/Simulation/feedbackteiler.sch-bak
+common/Simulation/ref.sch-bak
+common/Simulation/out.sch-bak
+common/Simulation/reg.sch-bak

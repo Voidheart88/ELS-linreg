@@ -1,9 +1,10 @@
-clear
+clear all
+
 % Read File
 %file = "sine.wav";
 file = "white.wav";
 
-info = audioinfo(file)
+info = audioinfo(file);
 [y, Fs] = audioread (file);
 
 y = y(1:10000);
@@ -14,13 +15,14 @@ t = (0:L-1)*Ts;
 
 % Plot raw file
 figure(1)
+
 plot(t(1:600),y(1:600))
 set(gca,'Fontsize',15);
 title("Weisses Rauschen - Zeitbereich")
 xlabel("t in s")
 ylabel("Amplitude")
 grid on
-print("-dpdfcrop", "white-time.pdf")
+print("-dpdf","white-time.pdf")
 
 % fft
 Y = fft(y);
@@ -31,18 +33,16 @@ P1(2:end-1) = 2*P1(2:end-1);
 f = Fs*(0:(L/2))/L;
 
 figure(2)
-plot(f,P1) 
+bar(f(1:1:end),P1(1:1:end));
 set(gca,'Fontsize',15);
 title("Weisses Rauschen - Spektrum")
 xlabel("f in Hz")
 ylabel("Amplitude")
 grid on
-print("-dpdfcrop", "white-spkt.pdf")
-
-
+print("-dpdf","white-spkt.pdf")
 %-------------------------------------------------------------------------------
 file = "pink.wav";
-info = audioinfo(file)
+info = audioinfo(file);
 [y, Fs] = audioread (file);
 
 
@@ -61,7 +61,7 @@ title("Rosa Rauschen - Zeitbereich")
 xlabel("t in s")
 ylabel("Amplitude")
 grid on
-print("-dpdf", "pink-time.pdf")
+print("-dpdf","pink-time.pdf")
 
 % fft
 Y = fft(y);
@@ -72,12 +72,12 @@ P1(2:end-1) = 2*P1(2:end-1);
 f = Fs*(0:(L/2))/L;
 
 figure(4)
-plot(f,P1) 
+bar(f(20:end),P1(20:end)) 
 set(gca,'Fontsize',15);
 title("Rosa Rauschen - Spektrum")
 xlabel("f in Hz")
 ylabel("Amplitude")
 grid on
-print("-dpdf", "pink-spkt.pdf")
+print("-dpdf","pink-spkt.pdf")
 
 return

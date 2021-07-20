@@ -1,0 +1,49 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Symbols_GenericBlock_1P
+#
+DEF Symbols_GenericBlock_1P U 0 40 Y Y 1 F N
+F0 "U" 0 -160 50 H V C CNN
+F1 "Symbols_GenericBlock_1P" 0 170 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 100 100 -100 0 1 0 f
+X ~ ~ -200 0 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Symbols_GenericBlock_2P
+#
+DEF Symbols_GenericBlock_2P U 0 40 Y Y 1 F N
+F0 "U" 0 -160 50 H V C CNN
+F1 "Symbols_GenericBlock_2P" 0 170 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 100 100 -100 0 1 0 f
+X ~ ~ -150 0 50 R 25 25 1 1 I
+X ~ ~ 150 0 50 L 25 25 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Symbols_Summationsstelle
+#
+DEF Symbols_Summationsstelle U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H I C CNN
+F1 "Symbols_Summationsstelle" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 -150 50 0 1 0 N
+P 2 0 1 0 0 -125 0 -175 N
+P 2 0 1 0 25 -225 50 -225 N
+P 3 0 1 0 -25 -150 25 -150 0 -150 N
+X ~ ~ -150 -150 100 R 50 50 1 1 P
+X ~ ~ 0 -300 100 U 50 50 1 1 P
+X ~ ~ 150 -150 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

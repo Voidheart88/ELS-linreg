@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Komparator
+D Komparator
+$ENDCMP
+#
+$CMP OPA_S
+D OPA Symbol
+$ENDCMP
+#
+$CMP OPA_S2
+D OPA Symbol
+$ENDCMP
+#
+$CMP OPA_VC
+D OPA Symbol
+$ENDCMP
+#
+$CMP R-lined
+D Simple resistor lined
+$ENDCMP
+#
+$CMP SW_VC
+D Voltage controlled switch
+$ENDCMP
+#
+$CMP TRML
+D Lossless transmission line
+$ENDCMP
+#
+#End Doc Library

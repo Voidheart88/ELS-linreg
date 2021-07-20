@@ -1,0 +1,55 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Differenzverstärker
+#
+DEF Differenzverstärker U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H I C CNN
+F1 "Differenzverstärker" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -400 50 0 0 0 Differenzverstärker Normal 0 C C
+S -500 -50 500 -800 1 1 0 N
+ENDDRAW
+ENDDEF
+#
+# Feedbackspannungsteiler
+#
+DEF Feedbackspannungsteiler U 0 40 Y Y 1 F N
+F0 "U" 450 -50 50 H I C CNN
+F1 "Feedbackspannungsteiler" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -400 50 0 0 0 Feedbackspannungsteiler Normal 0 C C
+S -500 -50 500 -800 1 1 0 N
+ENDDRAW
+ENDDEF
+#
+# Referenzsspannungsquelle
+#
+DEF Referenzsspannungsquelle U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H I C CNN
+F1 "Referenzsspannungsquelle" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -400 50 0 0 0 Referenzspannungsteiler Normal 0 C C
+S -500 -50 500 -800 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# arrow
+#
+DEF arrow U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H I C CNN
+F1 "arrow" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 5 0 0 0 -100 -150 150 -150 100 -100 150 -150 100 -200 N
+ENDDRAW
+ENDDEF
+#
+#End Library
